@@ -1605,35 +1605,49 @@ html[dir=rtl] .has-ultimate-tooltip .ultimate-tooltip-arrow {
   width: 100%;
   background-color: hsl(var(--bg-color-two));
 }
+
 .preloader .preloader-content {
   margin: auto;
+  text-align: center; /* Center the content */
 }
+
 .preloader .preloader-content .logo {
-  text-align: center;
   margin-bottom: 25px;
 }
+
+.preloader .preloader-content .logo img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
 .preloader .preloader-content .logo svg {
   width: 36px;
 }
+
 .preloader .preloader-content .logo svg path {
   fill: hsl(var(--bg-color-reverse));
 }
+
 .preloader .preloader-content .loading-bar {
   height: 4px;
   width: 180px;
   background-color: hsl(var(--bg-color-one));
   border-radius: 4px;
   overflow: hidden;
+  margin: 0 auto; /* Center the loading bar */
 }
+
 .preloader .preloader-content .loading-bar .loading-bar-progress {
   display: block;
   height: 100%;
   width: var(--loading-percentage, 0%);
   background-color: hsl(var(--bg-color-reverse));
 }
+
 .preloader ~ .hide-in-preloading {
   visibility: hidden;
 }
+
 
 /* 3. Header Styles */
 /*------------------*/
