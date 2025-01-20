@@ -3807,6 +3807,7 @@ html[dir=rtl] .portfolio-section .section-content .portfolio-items .works-filter
 .testimonials-section .section-content .testimonials-items {
   display: grid;
   grid-auto-rows: 220px;
+  gap: 10px; /* Add some space between items */
 }
 
 /* Media query for large screens */
@@ -3861,10 +3862,10 @@ html[dir=rtl] .portfolio-section .section-content .portfolio-items .works-filter
           filter: var(--drop-shadow);
 }
 
-/* Hide some items on smaller screens */
+/* Ensure all items are visible on smaller screens */
 @media (max-width: 767px) {
-  .testimonials-section .section-content .testimonials-items li:nth-of-type(1n + 7) {
-    display: none;
+  .testimonials-section .section-content .testimonials-items li {
+    display: block; /* Ensure all items are displayed */
   }
 }
 
