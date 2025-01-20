@@ -2753,7 +2753,7 @@ html[dir=rtl] .notifications-container .notify-leave-active {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
 @media (max-width: 991px) {
   .hero-section .hero-img {
     position: relative;
@@ -2843,7 +2843,7 @@ html[dir=rtl] .notifications-container .notify-leave-active {
   }
 }
 .hero-section .hero-img .layer:last-of-type {
-  height: 50%;
+  height: 100%;
   overflow: hidden;
 }
 @media (max-width: 991px) {
