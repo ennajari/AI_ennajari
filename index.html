@@ -12,7 +12,6 @@
 
     <!-- favicon -->
     <link rel="icon" href="assets//images/favicon.ico">
-
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -787,40 +786,40 @@
         </div>
         <!-- end of portfolio section -->
 
-        <!-- start of testimonials section -->
-        <div id="testimonials" class="testimonials-section section" tabindex="-1" ref="testimonialsSection">
-          <div class="container">
-            <div class="section-title">
-              <span class="subtitle">Testimonials</span>
-              <h2 class="title">
-                What People
-                <br>
-                Say About My Work?
-              </h2>         
-        
-          <div class="section-content">
-            <ul class="testimonials-items" v-staggerdelay="500">
-              <li class="has-ultimate-tooltip"
-                tabindex="0"
-                v-for="item in testimonialsItems"
-                :key="item.quoteAuthor.en">
-                <div class="testimonials-item">
-                  <div class="testimonial-author-img">
-                    <img :src="item.imgUrl || 'assets/images/testimonials/anonymous-user.png'" :alt="item.quoteAuthor.en">
-                  </div>
-                  <div class="ultimate-tooltip">
-                    <p>{{ item.quoteContent.en }}</p>
-                    <h4 class="ultimate-tooltip-title">{{ item.quoteAuthor.en }}</h4>
-                    <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.en }}</h5>
-                  </div>
-                  <div class="ultimate-tooltip-arrow"></div>
-                </div>
-              </li>
-            </ul>
+ <!-- start of testimonials section -->
+<div id="testimonials" class="testimonials-section section" tabindex="-1" ref="testimonialsSection">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">Testimonials</span>
+      <h2 class="title">
+        What People
+        <br>
+        Say About My Work?
+      </h2>
+    </div>
+    <div class="section-content">
+      <ul class="testimonials-items" v-staggerdelay="500">
+        <li class="has-ultimate-tooltip"
+            tabindex="0"
+            v-for="item in testimonialsItems"
+            :key="item.quoteAuthor.en">
+          <div class="testimonials-item">
+            <div class="testimonial-author-img">
+              <img :src="item.imgUrl || 'assets/images/testimonials/anonymous-user.png'" :alt="item.quoteAuthor.en">
+            </div>
+            <div class="ultimate-tooltip">
+              <p>{{ item.quoteContent.en }}</p>
+              <h4 class="ultimate-tooltip-title">{{ item.quoteAuthor.en }}</h4>
+              <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.en }}</h5>
+            </div>
+            <div class="ultimate-tooltip-arrow"></div>
           </div>
-        </div>
-        
-        <!-- end of testimonials section -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- end of testimonials section -->
 
         <!-- start of contact section -->
         <div id="contact" class="contact-section section" tabindex="-1">
