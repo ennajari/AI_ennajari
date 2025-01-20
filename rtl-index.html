@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="عبد الله النجاري - ملف شخصي يعرض مشاريع الذكاء الاصطناعي وعلم البيانات والمهارات والخبرات.">
+    <meta name="keywords" content="ملف شخصي, وكالة, أعمال, نظيف, شركة, مؤسسي, إبداعي, معرض, rtl, حديث, تصوير, vue, vuejs, تفاعلي, sass">
+
+    <!-- عنوان علامة تبويب المتصفح -->
+    <title>ملف عبد الله النجاري الشخصي</title>
+
+    <!-- أيقونة الموقع -->
+    <link rel="icon" href="assets//images/favicon.ico">
+
+    <!-- الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=نفيع&display=swap">
+
+    <!-- ملفات مكتبات css -->
+    <link rel="stylesheet" href="styles/libraries.min.css">
+    <!-- تضمين Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- تضمين GSAP للرسوم المتحركة -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- تضمين ScrollTrigger للرسوم المتحركة عند التمرير -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <!-- تضمين VanillaTilt لتأثيرات الانحراف -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+    <!-- ملف css لـ bootstrap -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+
+    <!-- الملف الرئيسي للأنماط -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <script>
+
+    </script>
+    <div id="app">
+      <div id="app-inner" ref="appRef"
+        :class="[savedTheme, {'enable-focus-style': isAnyFocus}]"
+        @click="isAnyFocus = false"
+        @keyup.tab="isAnyFocus = true">
+
+        <div class="circle-cursor circle-cursor-outer" ref="circleCursorOuter"></div>
+        <div class="circle-cursor circle-cursor-inner" ref="circleCursorInner"></div>
+
+        <!-- بداية الشاشة الأولية -->
+        <div class="preloader" ref="preloader">
+          <div class="preloader-content">
+            <div class="logo">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 199">
+                <path d="M0.720001 8.91999V0.855993H58.32L169.488 190.648V199H112.176L0.720001 8.91999ZM114.768 73.144V0.855993H169.488V166.744L114.768 73.144ZM0.720001 32.824L55.44 126.424V199H0.720001V32.824Z" />
+              </svg>
+            </div>
+            <div class="loading-bar">
+              <span class="loading-bar-progress"></span>
+            </div>
+          </div>
+        </div>
+        <!-- نهاية الشاشة الأولية -->
+
+        <!-- بداية الرأس -->
+        <header class="hide-in-preloading" :class="{
+          'big-header': isHeaderBig,
+          'small-header': !isHeaderBig,
+          'header-hidden': isHeaderHidden
+        }">
+          <div class="container">
+            <!-- الشعار -->
+            <div class="logo" title="النجاري">
+              <h1><a href="index.html">النجاري</a></h1>
+            </div>
+
+            <!-- روابط التنقل -->
+            <nav :class="{'menu-open': isNavMenuOpen}" ref="headerNav">
+
+              <!-- روابط قائمة التنقل -->
+              <ul class="nav-links">
+                <li v-for="link in navLinks" :key="link.url">
+                  <a :href="link.url" @click="closeNavMenu">
+                    {{ link.title.ar }}
+                  </a>
+                </li>
+              </ul>
+
+              <!-- محتوى القائمة في الأجهزة الكبيرة (مخفي في الهاتف واللوحي) -->
+              <div class="desktop-menu-content" tabindex="-1">
+                <div class="container">
+
+                  <!-- قسم نبذة عني -->
+                  <div class="about-us">
+                    <p>
+                      أنا مهتم بالذكاء الاصطناعي والتكنولوجيا، ودائما أسعى لإنشاء حلول مبتكرة وذات تأثير.
+                    </p>
+                    <h4 class="block-title">
+                      بفضل الأساس القوي في الذكاء الاصطناعي وعلم الحاسوب والرياضيات، أنا متخصص في تطوير تطبيقات مبتكرة والتعاون في مشاريع مبتكرة لدفع حدود التكنولوجيا.
+                    </h4>
+                  </div>
+
+                  <!-- قسم معلومات الاتصال -->
+                  <ul class="contact-info row">
+                    <!-- معلومات البريد الإلكتروني -->
+                    <li class="col-lg-4">
+                      <h4 class="block-title">البريد الإلكتروني</h4>
+                      <ul>
+                        <li><a href="mailto:abdellah.ennajari@example.com">abdellah.ennajari@example.com</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- معلومات العنوان -->
+                    <li class="col-lg-4">
+                      <h4 class="block-title">العنوان</h4>
+                      <ul>
+                        <li>
+                          المغرب، بركان
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- معلومات الهاتف -->
+                    <li class="col-lg-4">
+                      <h4 class="block-title">الهاتف</h4>
+                      <ul>
+                        <li><a href="tel:+212612345678">+212 6 12 34 56 78</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <!-- أيقونات الخيارات -->
+            <ul class="options-icons">
+
+              <!-- زر مبدل اللغة -->
+              <li class="lang-switcher">
+                <ul class="lang-switcher-menu">
+                  <li class="menu-item menu-item-has-children">
+                    <a href="#">ع</a>
+
+                    <ul class="sub-menu">
+                      <li class="menu-item">
+                        <a href="index.html">ع</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="ltr-index.html">En</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- زر مبدل السمة -->
+              <li class="theme-switcher">
+                <button :class="savedTheme" title="تغيير الوضع" @click="changeAppTheme"></button>
+              </li>
+
+              <!-- زر القائمة الجانبية -->
+              <li class="hamburger-btn" :class="{'open': isNavMenuOpen}">
+                <button @click="toggleNavMenu"
+                  title="تبديل القائمة الجانبية"
+                  aria-label="تبديل القائمة الجانبية"
+                  ref="navMenuToggleBtn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <!-- نهاية الرأس -->
+
+        <!-- بداية قسم البطل -->
+        <div id="hero"
+          class="hero-section hide-in-preloading"
+          data-paneffect="true"
+          ref="heroSection">
+          <div class="hero-img">
+            <div class="layer" v-clone>
+              <img src="assets/images/hero-img1.png" alt="">
+            </div>
+          </div>
+
+          <div class="hero-text">
+            <h2>
+              طالب هندسة الذكاء الاصطناعي / التعلم الآلي
+              <br>
+              هواة التعلم العميق والذكاء الاصطناعي العام
+            </h2>
+            <a href="#contact" class="btn">ابقى على تواصل</a>
+          </div>
+
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'فيسبوك', dir: 'right'}">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'تويتر', dir: 'right'}">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'لينكدإن', dir: 'right'}">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="scroll-down">
+            <a href="#about" title="التمرير لأسفل">التمرير</a>
+          </div>
+        </div>
+        <!-- نهاية قسم البطل -->
+
+        <!-- بداية قسم الإحصائيات -->
+        <div id="statistics" class="statistics-section section">
+          <div class="section-content">
+            <div class="container">
+              <ul class="statistics-items row">
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                  <a href="#experience">
+                    <div class="icon">
+                      <img src="assets/images/icons/emblem.png" alt="سنوات الخبرة">
+                    </div>
+                    <div class="text">
+                      <h3>4+</h3>
+                      <strong>سنوات الخبرة</strong>
+                    </div>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                  <a href="#portfolio">
+                    <div class="icon">
+                      <img src="assets/images/icons/check-mark.png" alt="المشاريع المكتملة">
+                    </div>
+                    <div class="text">
+                      <h3>102+</h3>
+                      <strong>المشاريع المكتملة</strong>
+                    </div>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                  <a href="#testimonials">
+                    <div class="icon">
+                      <img src="assets/images/icons/happy.png" alt="العملاء السعداء">
+                    </div>
+                    <div class="text">
+                      <h3>37+</h3>
+                      <strong>العملاء السعداء</strong>
+                    </div>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- نهاية قسم الإحصائيات -->
+
+        <!-- بداية قسم نبذة عني -->
+        <div id="about" class="about-section section" tabindex="-1" ref="aboutSection">
+          <div class="container">
+            <div class="section-content row">
+
+              <!-- صورة نبذة عني -->
+              <div class="about-img col-lg-6">
+                <div class="layer" v-clone>
+                  <img src="assets/images/hero-img2.png" alt="اسم المستخدم">
+                </div>
+              </div>
+
+              <!-- مربع النص -->
+              <div class="about-text col-lg-6">
+                <div class="text-box-inline">
+                  <span class="subtitle">نبذة عني</span>
+                  <h2>
+                    تبحث عن الابتكار؟
+                    <br>
+                    دعونا نتعاون!
+                  </h2>
+                  <p>
+                    أهلا! أنا عبد الله النجاري، مهندس ومطور ذكاء اصطناعي لديه خلفية قوية في العلوم الرياضية وعلم الحاسوب. أنا متحمس لخلق حلول تكنولوجية ذات تأثير، متخصص في الذكاء الاصطناعي والمشاريع المبتكرة. أستمتع بتحويل الأفكار إلى واقع باستخدام خوارزميات متقدمة وأساليب إبداعية. أنا دائما حريص على تعلم تكنولوجيات وأدوات ومفاهيم جديدة لتعزيز مهاراتي. بالإضافة إلى العمل على مشاريع فردية مركزة على الذكاء الاصطناعي، أزدهر في البيئات التعاونية التي تقدر العمل الجماعي والابتكار.
+                  </p>
+                  <div class="btns-container">
+                    <a href="#contact" class="btn btn-primary">استأجرني</a>
+                    <a download href="https://drive.google.com/file/d/1Xb3ziKFCc0jDnOPQ5DBeFH2vFVBLUqbi/view?usp=sharing" class="btn btn-outline-light">تحميل السيرة الذاتية</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- نهاية قسم نبذة عني -->
+
+        <!-- بداية قسم المهارات -->
+        <div id="skills" class="skills-section section" tabindex="-1">
+          <div class="container">
+            <div class="section-content row">
+
+              <!-- مربع النص -->
+              <div class="skills-text col-lg-6">
+                <div class="text-box-inline">
+                  <span class="subtitle">مهاراتي</span>
+                  <h2>
+                    الخبرة التي تحرك
+                    <br>
+                    الابتكار التكنولوجي
+                  </h2>
+                  <p>
+                    أمتلك مجموعة قوية من المهارات في هندسة الذكاء الاصطناعي وهندسة البرمجيات وحل المشكلات، مما يتيح لي تصميم حلول مبتكرة مخصصة للتحديات المعقدة. أتفوق في العمل مع التكنولوجيات المتقدمة، مستغلا إلمي بأدوات البرمجة والتحليل.
+                  </p>
+                  <div ref="skillsSwitchBtn" class="toggle-switch-btn">
+                    <input id="skills-list" type="radio" value="skills" v-model="skillsType" checked>
+                    <label for="skills-list" class="link-hover">المهارات</label>
+                    <input id="tools-list" type="radio" value="tools" v-model="skillsType">
+                    <label for="tools-list" class="link-hover">الأدوات</label>
+                    <span class="switcher-toggle" style="width: calc((100% - 8px) / 2);"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- عناصر المهارات -->
+              <div class="skills-items col-lg-6">
+
+                <!-- قائمة المهارات -->
+                <ul v-staggerdelay="50" v-show="skillsType === 'skills'">
+                  <li tabindex="0" v-tooltip="{text: 'برمجة بايثون', dir: 'top'}">
+                    <div class="skill-icon">
+                      <img src="assets/images/python-icon.png" alt="بايثون">
+                    </div>
+
+                  </li>
+                  <li tabindex="0" v-tooltip="{text: 'هندسة التعلم الآلي', dir: 'top'}">
+                    <div class="skill-icon">
+                      <img src="assets/images/ml-icon.png" alt="التعلم الآلي">
+                    </div>
+
+                  </li>
+                  <li tabindex="0" v-tooltip="{text: 'التعلم العميق', dir: 'top'}">
+                    <div class="skill-icon">
+                      <img src="assets/images/deep-learning-icon.png" alt="التعلم العميق">
+                    </div>
+
+                  </li>
+                  <li tabindex="0" v-tooltip="{text: 'هندسة الويب', dir: 'top'}">
+                    <div class="skill-icon">
+                      <img src="assets/images/web-dev-icon.png" alt="هندسة الويب">
+                    </div>
+
+                  </li>
+                  <li tabindex="0" v-tooltip="{text: 'تحليل البيانات', dir: 'top'}">
+                    <div class="skill-icon">
+                      <img src="assets/images/data-analysis-icon.png" alt="تحليل البيانات">
+                    </div>
+
+                  </li>
+                </ul>
+
+                <!-- قائمة الأدوات -->
+                <ul v-staggerdelay="50" v-show="skillsType === 'tools'">
+                  <li tabindex="0" v-tooltip="{text: 'أناكوندا لإدارة البيئة', dir: 'top'}">
+                    <div class="skill-icon">
+                      <img src="assets/images/anaconda-icon.png" alt="أناكوندا">
+                    </div>
+                  </li>
+                  <li tabindex="0" v-tooltip="{text: 'جوبيتر نوتبوك للهندسة التفاعلية', dir: 'top'}">
+                    <div class="skill-icon">
+                      <img src="assets/images/jupyter-icon.png" alt="جوبيتر نوتبوك">
+                    </div>
+                  </li>
+                  <li tabindex="0" v-tooltip="{text: 'جيت للتحكم بالإصدار', dir: 'top'}">
+                    <div class="skill-icon">
+                      <img src="assets/images/git-icon.png" alt="جيت">
+                    </div>
+                  </li>
+                  <li tabindex="0" v-tooltip="{text: 'تينسر فلو لبناء نماذج الذكاء الاصطناعي', dir: 'top'}">
+                    <div class="skill-icon">
+                      <img src="assets/images/tensorflow-icon.png" alt="تينسر فلو">
+                    </div>
+                  </li>
+                  <li tabindex="0" v-tooltip="{text: 'بايتورش للشبكات العصبية المتقدمة', dir: 'top'}">
+                    <div class="skill-icon">
+                      <img src="assets/images/pytorch-icon.png" alt="بايتورش">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- نهاية قسم المهارات -->
+
+        <!-- بداية قسم الخبرة -->
+        <div id="experience" class="experience-section section" tabindex="-1">
+          <div class="container">
+            <div class="section-content row">
+
+              <!-- الجدول الزمني -->
+              <div class="col-lg-6">
+                <div class="experience-timeline">
+                  <div class="timepath" ref="experienceTimepath">
+                    <span class="line"></span>
+                    <template v-for="line in experienceChunks">
+                      <span class="semicircle"></span>
+                      <span class="line"></span>
+                    </template>
+                  </div>
+
+                  <ul class="timeline-items">
+                    <li class="has-ultimate-tooltip" tabindex="0" v-for="item in experienceItems">
+                      <template v-if="Object.keys(item).length > 0">
+                        <h3>{{ item.date }}</h3>
+                        <div class="ultimate-tooltip">
+                          <h4 class="ultimate-tooltip-title">{{ item.companyName.ar }}</h4>
+                          <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.ar }}</h5>
+                          <p>{{ item.desc.ar }}</p>
+                        </div>
+                        <div class="ultimate-tooltip-arrow"></div>
+                      </template>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- مربع النص -->
+              <div class="experience-text col-lg-6">
+                <div class="text-box-inline">
+                  <span class="subtitle">الخبرة</span>
+                  <h2>
+                    4+ سنوات من الخبرة
+                    <br>
+                    مع مشاريع مبتكرة!
+                  </h2>
+                  <p>
+                    لقد كنت أعمل على تطبيقات الذكاء الاصطناعي والنمذجة ثلاثية الأبعاد لأكثر من 4 سنوات، مع التركيز على إنشاء حلول تكون مبتكرة وسهلة الاستخدام. من تصميم تطبيقات بديهية إلى تطوير منظور تفاعلي للمنتجات 360 درجة، أهدف إلى تقديم نتائج ذات تأثير عن طريق استغلال التكنولوجيات المتقدمة والإبداع.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- نهاية قسم الخبرة -->
+
+        <!-- بداية قسم الملف -->
+        <div id="portfolio" class="portfolio-section section" tabindex="-1">
+          <div class="container">
+            <div class="section-content">
+
+              <!-- عناصر الملف -->
+              <ul class="portfolio-items has-works" ref="portfolioItems" data-no-works-msg="لا توجد أعمال لتحميلها">
+                <li>
+                  <!-- قسم المقدمة -->
+                  <div class="text-box-inline">
+                    <span class="subtitle">ملفي الشخصي</span>
+                    <h2>
+                      استكشف مشاريعي في الذكاء الاصطناعي والتعلم الآلي والتعلم العميق والذكاء الاصطناعي العام
+                    </h2>
+                    <p>
+                      كطالب هندسة الذكاء الاصطناعي مع التركيز على التعلم الآلي وعلم البيانات والتعلم العميق، أنا متحمس لتطبيق معرفتي على مشاريع مبتكرة. تحقق من أعمالي التي تعرض مهاراتي التقنية وإبداعي.
+                    </p>
+                    <ul class="works-filter">
+                      <li v-for="filter in filters" :key="filter">
+                        <button :class="{'active': currentFilter === filter}" @click="filterPortfolioItems(filter)">
+                          {{ filter }}
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <!-- قائمة عناصر الملف -->
+                <li class="portfolio-item" v-for="work in filteredPortfolioItems" :key="work.title.ar">
+                  <a :href="work.url" target="_blank" rel="noopener">
+                    <div class="item-img">
+                      <img :src="work.imgUrl" :alt="work.title.ar" />
+                    </div>
+                    <div class="item-details">
+                      <h3 class="title">{{ work.title.ar }}</h3>
+                      <div class="date">{{ work.date.ar }}</div>
+                      <p class="description">{{ work.description }}</p>
+                      <div class="tags">
+                        <span v-for="tag in work.tags" :key="tag" class="tag">{{ tag }}</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- زر تحميل المزيد -->
+                <li>
+                  <button class="more" @click="getPortfolioItems">تحميل المزيد من الأعمال</button>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <!-- نهاية قسم الملف -->
+
+        <!-- بداية قسم التوصيات -->
+        <div id="testimonials" class="testimonials-section section" tabindex="-1" ref="testimonialsSection">
+          <div class="container">
+            <div class="section-title">
+              <span class="subtitle">التوصيات</span>
+              <h2 class="title">
+                ماذا يقول الناس
+                <br>
+                عن عملي؟
+              </h2>
+
+            <div class="section-content">
+              <ul class="testimonials-items" v-staggerdelay="500">
+                <li class="has-ultimate-tooltip"
+                  tabindex="0"
+                  v-for="item in testimonialsItems"
+                  :key="item.quoteAuthor.ar">
+                  <div class="testimonials-item">
+                    <div class="testimonial-author-img">
+                      <img :src="item.imgUrl || 'assets/images/testimonials/anonymous-user.png'" :alt="item.quoteAuthor.ar">
+                    </div>
+                    <div class="ultimate-tooltip">
+                      <p>{{ item.quoteContent.ar }}</p>
+                      <h4 class="ultimate-tooltip-title">{{ item.quoteAuthor.ar }}</h4>
+                      <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.ar }}</h5>
+                    </div>
+                    <div class="ultimate-tooltip-arrow"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- نهاية قسم التوصيات -->
+
+        <!-- بداية قسم الاتصال -->
+        <div id="contact" class="contact-section section" tabindex="-1">
+          <div class="container">
+            <div class="section-content row">
+
+              <!-- مربع النص -->
+              <div class="contact-text col-lg-6">
+                <div class="text-box-inline">
+                  <span class="subtitle">الاتصال</span>
+                  <h2>
+                    هل لديك أي مشروع؟
+                    <br>
+                    يرجى إرسال رسالة
+                  </h2>
+                  <p>
+                    ابقى على تواصل ودعني أعرف كيف يمكنني مساعدتك. املأ النموذج وسأكون على اتصال في أقرب وقت ممكن.
+                  </p>
+                </div>
+
+                <!-- معلومات الاتصال -->
+                <ul class="contact-info">
+                  <li>
+                    <img src="assets/images/icons/address.png" alt="العنوان">
+                    <div>
+                      <strong>العنوان:</strong>
+                      المغرب
+                    </div>
+                  </li>
+                  <li>
+                    <img src="assets/images/icons/phone.png" alt="الهاتف">
+                    <div>
+                      <strong>الهاتف:</strong>
+                      <ul>
+                        <li><a href="tel:02966202290" class="ltr-dir">(+212) 655 798 315</a></li>
+                        <li><a href="tel:02966202291" class="ltr-dir">(+212) 655 798 315</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="assets/images/icons/email.png" alt="البريد الإلكتروني">
+                    <div>
+                      <strong>البريد الإلكتروني:</strong>
+                      <ul>
+                        <li><a href="mailto:abdellahennajari2018@gmail.com">abdellahennajari2018@gmail.com</a></li>
+                        <li><a href="mailto:abdellah.ennajari.23@ump.ac.ma">abdellah.ennajari.23@ump.ac.ma</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- روابط التواصل الاجتماعي -->
+                <ul class="social">
+                  <li>
+                    <a href="https://www.instagram.com/abdellah.ennajari/" target="_blank" rel="noreferrer" v-tooltip="{text: 'فيسبوك', dir: 'top'}">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'تويتر', dir: 'top'}">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="www.linkedin.com/in/ennajari-abdellah" target="_blank" rel="noreferrer" v-tooltip="{text: 'لينكدإن', dir: 'top'}">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'يوتيوب', dir: 'top'}">
+                      <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- نموذج الاتصال -->
+              <div class="col-lg-6">
+                <form ref="contactForm"
+                  class="contact-form form-styled"
+                  action="contact_form.php"
+                  data-success-msg="تم إرسال الرسالة بنجاح!"
+                  data-err-msg="عذرا! حدث خطأ ما، يرجى المحاولة مرة أخرى.">
+                  <div class="group">
+                    <label>الاسم</label>
+                    <div class="control has-prefix-icon">
+                      <input type="text"
+                        name="name"
+                        placeholder="مثال: جون دو"
+                        minlength="3"
+                        required>
+                      <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
+
+                      <!-- رسائل أخطاء التحقق -->
+                      <div class="errors-msgs">
+                        <input class="required" type="hidden" value="الاسم مطلوب">
+                        <input class="minLength" type="hidden" value="يجب أن يكون الاسم 3 أحرف على الأقل">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group">
+                    <label>البريد الإلكتروني</label>
+                    <div class="control has-prefix-icon">
+                      <input class="ltr-dir"
+                        type="email"
+                        inputmode="email"
+                        name="email"
+                        placeholder="مثال: john.doe@gmail.com"
+                        required>
+                      <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
+
+                      <!-- رسائل أخطاء التحقق -->
+                      <div class="errors-msgs">
+                        <input class="required" type="hidden" value="البريد الإلكتروني مطلوب">
+                        <input class="invalid" type="hidden" value="يرجى إدخال عنوان بريد إلكتروني صالح">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group phone-number">
+                    <label>الهاتف <span class="optional">(اختياري)</span></label>
+                    <div class="control has-prefix-icon">
+                      <input type="tel"
+                        inputmode="tel"
+                        name="phone"
+                        placeholder="رقم الهاتف">
+                      <i class="fa fa-phone prefix-icon" aria-hidden="true"></i>
+
+                      <!-- رسائل أخطاء التحقق -->
+                      <div class="errors-msgs">
+                        <input class="invalid" type="hidden" value="يرجى إدخال رقم هاتف صالح">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group">
+                    <label>الرسالة</label>
+                    <div class="control has-prefix-icon">
+                      <textarea name="message" placeholder="اكتب رسالة..." required></textarea>
+                      <i class="fa fa-comments prefix-icon" aria-hidden="true"></i>
+
+                      <!-- رسائل أخطاء التحقق -->
+                      <div class="errors-msgs">
+                        <input class="required" type="hidden" value="الرسالة مطلوبة">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group">
+                    <div class="control">
+                      <button class="submit-btn btn btn-dark" type="button" @click="contactFormValidation">إرسال</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- نهاية قسم الاتصال -->
+
+        <!-- بداية التذييل -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <!-- الشعار -->
+                <div class="logo" title="النجاري">
+                  <h1><a href="index.html">النجاري</a></h1>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                &copy; {{ copyrightDate }} 
+                <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noopener"></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- نهاية التذييل -->
+
+        <!-- زر التمرير لأعلى -->
+        <button class="scroll-to-top" ref="scrollTopBtn"
+          title="العودة لأعلى"
+          data-show-at="50"
+          @click="scrollToTop">
+          <svg width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+          </svg>
+        </button>
+
+        <!-- إشعارات التنبيه -->
+        <ul class="notifications-container hide-in-preloading">
+          <transition-group name="notify">
+            <li v-for="notify of notifications"
+              :key="notify.id"
+              :id="notify.id"
+              :class="['notification', 'show', notify.className, notify.time && 'timer']"
+            >
+              {{ notify.msg }}
+              <i class="fa fa-times link-hover" aria-hidden="true" @click="dismissNotify(notify.id)"></i>
+              <span v-if="notify.time"
+                class="disappearing-time"
+                :style="{ 'animation-duration': notify.time + 'ms' }"></span>
+            </li>
+          </transition-group>
+        </ul>
+
+        <!-- تحميل ajax -->
+        <div class="ajax-loading hide-in-preloading" v-show="isAjaxLoading">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ملف js للمكونات الإضافية -->
+    <script src="scripts/plugins.min.js"></script>
+
+    <!-- الملف الرئيسي للنصوص -->
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>
