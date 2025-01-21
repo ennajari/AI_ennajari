@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Abdellah Ennajari - Portfolio showcasing AI and Data Science projects, skills, and experiences.">
     <meta name="keywords" content="portfolio, agency, business, clean, company, corporate, creative, gallery, rtl, modern, photography, vue, vuejs, responsive, sass">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title of the browser tab -->
     <title>Ennajari Abdellah Portfolio</title>
 
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Nafie&display=swap">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- css libraries file -->
     <link rel="stylesheet" href="styles/libraries.min.css">
 <!-- Include Vue.js -->
@@ -195,22 +195,23 @@
           <div class="social">
             <ul>
               <li>
-                <a href="https://www.instagram.com/abdellah.ennajari/" target="_blank" rel="noreferrer" v-tooltip="{text: 'Facebook', dir: 'right'}">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="https://www.instagram.com/abdellah.ennajari/" target="_blank" rel="noreferrer" v-tooltip="{text: 'Instagram', dir: 'right'}">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="www.linkedin.com/in/ennajari-abdellah" target="_blank" rel="noreferrer" v-tooltip="{text: 'Twitter', dir: 'right'}">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                <a href="https://github.com/ennajari" target="_blank" rel="noreferrer" v-tooltip="{text: 'GitHub', dir: 'right'}">
+                  <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'LinkedIn', dir: 'right'}">
+                <a href="https://www.linkedin.com/in/ennajari-abdellah" target="_blank" rel="noreferrer" v-tooltip="{text: 'LinkedIn', dir: 'right'}">
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
           </div>
+          
 
           <div class="scroll-down">
             <a href="#about" title="Scroll Down">Scroll</a>
@@ -785,7 +786,352 @@
           </div>
         </div>
         <!-- end of portfolio section -->
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+    <!--  Education Section -->
+    <section id="education" class="section" tabindex="-1">
+      <div class="container">
+          <div class="section-title">
+              <span class="subtitle">📚 Education Journey</span>
+              <h2 class="title">Educational Background</h2>
+          </div>
+          <div class="section-content">
+              <ul class="education-items">
+                  <li>
+                      <div class="education-item">
+                          <button class="education-btn" onclick="toggleDetails('eniad')">
+                              <div class="education-header">
+                                  <span class="year">2023 – Present</span>
+                                  <span class="title">National School of Artificial Intelligence and Digital (ENIAD)</span>
+                                  <span class="emoji">🎓</span>
+                              </div>
+                          </button>
+                          <div id="eniad" class="education-details">
+                              <p class="degree">Engineering Degree in Artificial Intelligence</p>
+                              <ul class="achievements">
+                                  <li>🤖 Specialization in Artificial Intelligence and Data Science</li>
+                                  <li>📊 Advanced coursework in Machine Learning, Deep Learning, and Data Science</li>
+                                  <li>👁️ Practical projects in Computer Vision, Natural Language Processing (NLP), and image classification</li>
+                                  <li>🔬 Research focus on AI applications and innovative technologies</li>
+                                  <li>👥 Active member of the AI student association, participating in hackathons and data science competitions</li>
+                                  <li>🏆 Developed a real-time flower recognition system with 95% accuracy using TensorFlow and Streamlit</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="education-item">
+                          <button class="education-btn" onclick="toggleDetails('ibn-zohr')">
+                              <div class="education-header">
+                                  <span class="year">2021 – 2023</span>
+                                  <span class="title">Ibn Zohr University, Ouarzazate</span>
+                                  <span class="emoji">🏛️</span>
+                              </div>
+                          </button>
+                          <div id="ibn-zohr" class="education-details">
+                              <p class="degree">Bachelor's Degree in Mathematics and Computer Science</p>
+                              <ul class="achievements">
+                                  <li>📐 Advanced Mathematics and Algorithmic courses</li>
+                                  <li>💻 Computer Science Fundamentals, including programming and software engineering</li>
+                                  <li>🔧 Software Engineering Principles and project management</li>
+                                  <li>🏆 Top of the class with a final project on automated timetable generation using genetic algorithms</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="education-item">
+                          <button class="education-btn" onclick="toggleDetails('french-cert')">
+                              <div class="education-header">
+                                  <span class="year">2023</span>
+                                  <span class="title">French Language Proficiency Certificate</span>
+                                  <span class="emoji">🇫🇷</span>
+                              </div>
+                          </button>
+                          <div id="french-cert" class="education-details">
+                              <p class="degree">Campus France</p>
+                              <ul class="achievements">
+                                  <li>🗣️ Advanced French Language Skills (B2 Level)</li>
+                                  <li>✍️ Professional Writing Competency</li>
+                                  <li>🎯 Business Communication Focus</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="education-item">
+                        <button class="education-btn" onclick="toggleDetails('youcode')">
+                            <div class="education-header">
+                                <span class="year">July 2023</span>
+                                <span class="title">YouCode, Youssoufia</span>
+                                <span class="emoji">💻</span>
+                            </div>
+                        </button>
+                        <div id="youcode" class="education-details">
+                            <p class="degree">Intensive Training in Full-Stack Web Development</p>
+                            <ul class="achievements">
+                                <li>Mastered modern web technologies and frameworks</li>
+                                <li>Completed practical projects using HTML5, CSS3, JavaScript, and PHP</li>
+                                <li>Gained experience with agile development methodologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                  <li>
+                      <div class="education-item">
+                          <button class="education-btn" onclick="toggleDetails('high-school')">
+                              <div class="education-header">
+                                  <span class="year">2020</span>
+                                  <span class="title">Lycée El Ouroud, Kelaat M’gouna</span>
+                                  <span class="emoji">🏫</span>
+                              </div>
+                          </button>
+                          <div id="high-school" class="education-details">
+                              <p class="degree">Baccalaureate in Physical and Chemical Sciences</p>
+                              <ul class="achievements">
+                                  <li>🔬 Strong foundation in Physics and Chemistry</li>
+                                  <li>📚 Comprehensive education in Mathematics and Sciences</li>
+                                  <li>🏆 Excellent academic performance</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+                  
+              </ul>
+          </div>
+      </div>
+    </section>
+    
 
+<!-- Recent Articles Section -->
+<section id="recent-articles" class="section" tabindex="-1">
+  <div class="container">
+      <div class="section-title">
+          <span class="subtitle">📝 Latest Insights</span>
+          <h2 class="title">Recent Articles</h2>
+      </div>
+      <div class="section-content">
+          <ul class="articles-items">
+              <li class="article-item">
+                  <a href="article1.html" class="article-link">
+                      <span class="emoji">🤖</span>
+                      <h3 class="article-title">The Future of Artificial Intelligence</h3>
+                      <p class="article-date">January 2025</p>
+                      <p class="article-snippet">Discover how AI is reshaping industries and redefining innovation.</p>
+                      <span class="read-more">Read More →</span>
+                  </a>
+              </li>
+              <li class="article-item">
+                  <a href="article2.html" class="article-link">
+                      <span class="emoji">📊</span>
+                      <h3 class="article-title">Big Data Analytics: Unlocking Hidden Insights</h3>
+                      <p class="article-date">December 2024</p>
+                      <p class="article-snippet">Learn about the latest techniques in big data analysis.</p>
+                      <span class="read-more">Read More →</span>
+                  </a>
+              </li>
+              <li class="article-item">
+                  <a href="article3.html" class="article-link">
+                      <span class="emoji">💊</span>
+                      <h3 class="article-title">Machine Learning in Healthcare</h3>
+                      <p class="article-date">November 2024</p>
+                      <p class="article-snippet">Explore how ML is revolutionizing medical diagnostics.</p>
+                      <span class="read-more">Read More →</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+<script>
+  // Education Details Toggle
+  function toggleDetails(id) {
+      const details = document.getElementById(id);
+      const allDetails = document.querySelectorAll('.education-details');
+      const currentButton = details.previousElementSibling;
+      const allButtons = document.querySelectorAll('.education-btn');
+
+      // Close all other details
+      allDetails.forEach(detail => {
+          if (detail.id !== id && detail.style.display === 'block') {
+              detail.style.display = 'none';
+              detail.previousElementSibling.classList.remove('active');
+          }
+      });
+
+      // Toggle current details
+      if (details.style.display === 'block') {
+          details.style.display = 'none';
+          currentButton.classList.remove('active');
+      } else {
+          details.style.display = 'block';
+          currentButton.classList.add('active');
+          // Smooth scroll to the details
+          details.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+  }
+
+  // Article Animation
+  function handleArticleAnimation() {
+      const articles = document.querySelectorAll('.article-item');
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  setTimeout(() => {
+                      entry.target.style.opacity = '1';
+                      entry.target.style.transform = 'translateY(0)';
+                  }, entry.target.dataset.delay || 0);
+              }
+          });
+      }, { threshold: 0.1 });
+
+      articles.forEach((article, index) => {
+          article.dataset.delay = index * 150; // Stagger the animations
+          observer.observe(article);
+      });
+  }
+
+  // Initialize Theme based on system preference
+  function initializeTheme() {
+      // Check if user has a saved preference
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+          return;
+      }
+
+      // Check system preference
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+      }
+  }
+
+  // Handle system theme changes
+  function handleSystemThemeChange() {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+          if (!localStorage.getItem('theme')) { // Only change if user hasn't set a preference
+              document.documentElement.setAttribute('data-theme', event.matches ? 'dark' : 'light');
+          }
+      });
+  }
+
+  // Add smooth scrolling to all internal links
+  function initializeSmoothScroll() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href');
+              if (targetId === '#') return;
+
+              const target = document.querySelector(targetId);
+              if (target) {
+                  target.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start'
+                  });
+              }
+          });
+      });
+  }
+
+  // Add intersection observer for fade-in animations
+  function initializeScrollAnimations() {
+      const elements = document.querySelectorAll('.section');
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                  observer.unobserve(entry.target); // Only animate once
+              }
+          });
+      }, {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+      });
+
+      elements.forEach(element => observer.observe(element));
+  }
+
+  // Handle mobile menu if exists
+  function initializeMobileMenu() {
+      const menuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.querySelector('.mobile-menu');
+
+      if (menuButton && mobileMenu) {
+          menuButton.addEventListener('click', () => {
+              const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+              menuButton.setAttribute('aria-expanded', !isExpanded);
+              mobileMenu.classList.toggle('active');
+          });
+      }
+  }
+
+  // Add resize observer for height animations
+  function initializeHeightAnimations() {
+      const resizeObserver = new ResizeObserver(entries => {
+          entries.forEach(entry => {
+              const element = entry.target;
+              if (element.classList.contains('education-details')) {
+                  element.style.maxHeight = element.style.display === 'block'
+                      ? `${element.scrollHeight}px`
+                      : '0px';
+              }
+          });
+      });
+
+      document.querySelectorAll('.education-details').forEach(detail => {
+          resizeObserver.observe(detail);
+      });
+  }
+
+  // Initialize everything when DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+      initializeTheme();
+      handleSystemThemeChange();
+      initializeSmoothScroll();
+      initializeScrollAnimations();
+      initializeMobileMenu();
+      initializeHeightAnimations();
+      handleArticleAnimation();
+  });
+
+  // Handle scroll events efficiently
+  let scrollTimeout;
+  window.addEventListener('scroll', () => {
+      if (!scrollTimeout) {
+          scrollTimeout = setTimeout(() => {
+              scrollTimeout = null;
+              handleArticleAnimation();
+          }, 20);
+      }
+  });
+
+  // Handle page visibility changes
+  document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') {
+          // Reinitialize animations for visible elements
+          handleArticleAnimation();
+      }
+  });
+
+  // Export functions for potential module usage
+  if (typeof module !== 'undefined' && module.exports) {
+      module.exports = {
+          toggleDetails,
+          handleArticleAnimation,
+          initializeTheme,
+          handleSystemThemeChange,
+          initializeSmoothScroll,
+          initializeScrollAnimations,
+          initializeMobileMenu,
+          initializeHeightAnimations
+      };
+  }
+</script>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
  <!-- start of testimonials section -->
 <div id="testimonials" class="testimonials-section section" tabindex="-1" ref="testimonialsSection">
   <div class="container">
@@ -821,245 +1167,216 @@
 </div>
 <!-- end of testimonials section -->
 
-        <!-- start of contact section -->
-        <div id="contact" class="contact-section section" tabindex="-1">
-          <div class="container">
-            <div class="section-content row">
-
-              <!-- text box -->
-              <div class="contact-text col-lg-6">
-                <div class="text-box-inline">
-                  <span class="subtitle">contact</span>
-                  <h2>
-                    Have You Any Project?
-                    <br>
-                    Please Drop a Message
-                  </h2>
-                  <p>
-                    Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
-                  </p>
-                </div>
-
-                <!-- contact info -->
-                <ul class="contact-info">
-                  <li>
-                    <img src="assets/images/icons/address.png" alt="Address">
-                    <div>
-                      <strong>Address:</strong>
-                      Morocco
-                    </div>
-                  </li>
-                  <li>
-                    <img src="assets/images/icons/phone.png" alt="Phone">
-                    <div>
-                      <strong>Phone:</strong>
-                      <ul>
-                        <li><a href="tel:+212655798315" class="ltr-dir">(+212) 655 798 315</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="assets/images/icons/email.png" alt="Email">
-                    <div>
-                      <strong>Email:</strong>
-                      <ul>
-                        <li><a href="mailto:abdellahennajari2018@gmail.com">abdellahennajari2018@gmail.com</a></li>
-                        <li><a href="mailto:abdellah.ennajari.23@ump.ac.ma">abdellah.ennajari.23@ump.ac.ma</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-
-                <!-- social links -->
-                <ul class="social">
-                  <li>
-                    <a href="https://www.instagram.com/abdellah.ennajari/" target="_blank" rel="noreferrer" v-tooltip="{text: 'Facebook', dir: 'top'}">
-                      <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'Twitter', dir: 'top'}">
-                      <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="www.linkedin.com/in/ennajari-abdellah" target="_blank" rel="noreferrer" v-tooltip="{text: 'LinkedIn', dir: 'top'}">
-                      <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'YouTube', dir: 'top'}">
-                      <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
- <!-- contact form -->
-<div class="col-lg-6">
-  <form ref="contactForm"
-        class="contact-form form-styled"
-        action="https://formspree.io/f/mdkkqlyy"
-        method="POST"
-        data-success-msg="Message sent successfully!"
-        data-err-msg="Oops! something went wrong, please try again.">
-    <div class="group">
-      <label>Name</label>
-      <div class="control has-prefix-icon">
-        <input type="text"
-               name="name"
-               placeholder="e.g. John Doe"
-               minlength="3"
-               required>
-        <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
-
-        <!-- validation errors messages -->
-        <div class="errors-msgs">
-          <input class="required" type="hidden" value="Name is required">
-          <input class="minLength" type="hidden" value="Name must be at least 3 characters">
+<!-- start of contact section -->
+<div id="contact" class="contact-section section" tabindex="-1">
+  <div class="container">
+    <div class="section-content row">
+      <!-- text box -->
+      <div class="contact-text col-lg-6">
+        <div class="text-box-inline">
+          <span class="subtitle">contact</span>
+          <h2>
+            Have You Any Project?
+            <br>
+            Please Drop a Message
+          </h2>
+          <p>
+            Get in touch and let me know how I can help. Fill out the form and I’ll be in touch as soon as possible.
+          </p>
         </div>
+
+        <!-- contact info -->
+        <ul class="contact-info">
+          <li>
+            <img src="assets/images/icons/address.png" alt="Address">
+            <div>
+              <strong>Address:</strong>
+              Morocco
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/icons/phone.png" alt="Phone">
+            <div>
+              <strong>Phone:</strong>
+              <ul>
+                <li><a href="tel:+212655798315" class="ltr-dir">(+212) 655 798 315</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/icons/email.png" alt="Email">
+            <div>
+              <strong>Email:</strong>
+              <ul>
+                <li><a href="mailto:abdellahennajari2018@gmail.com">abdellahennajari2018@gmail.com</a></li>
+                <li><a href="mailto:abdellah.ennajari.23@ump.ac.ma">abdellah.ennajari.23@ump.ac.ma</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <!-- social links -->
+        <ul class="social">
+          <li>
+            <a href="https://www.instagram.com/abdellah.ennajari/" target="_blank" rel="noreferrer" v-tooltip="{text: 'Instagram', dir: 'top'}">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'Twitter', dir: 'top'}">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ennajari-abdellah" target="_blank" rel="noreferrer" v-tooltip="{text: 'LinkedIn', dir: 'top'}">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ennajari" target="_blank" rel="noreferrer" v-tooltip="{text: 'GitHub', dir: 'top'}">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
-    <div class="group">
-      <label>Email</label>
-      <div class="control has-prefix-icon">
-        <input class="ltr-dir"
-               type="email"
-               inputmode="email"
-               name="email"
-               placeholder="e.g. john.doe@gmail.com"
-               required>
-        <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
 
-        <!-- validation errors messages -->
-        <div class="errors-msgs">
-          <input class="required" type="hidden" value="Email is required">
-          <input class="invalid" type="hidden" value="Please enter a valid email address">
-        </div>
-      </div>
-    </div>
-    <div class="group phone-number">
-      <label>Phone <span class="optional">(Optional)</span></label>
-      <div class="control has-prefix-icon">
-        <input type="tel"
-               inputmode="tel"
-               name="phone"
-               placeholder="Phone Number">
-        <i class="fa fa-phone prefix-icon" aria-hidden="true"></i>
+      <!-- contact form -->
+      <div class="col-lg-6">
+        <form ref="contactForm"
+              class="contact-form form-styled"
+              action="https://formspree.io/f/mdkkqlyy"
+              method="POST"
+              data-success-msg="Message sent successfully!"
+              data-err-msg="Oops! something went wrong, please try again.">
+          <div class="group">
+            <label>Name</label>
+            <div class="control has-prefix-icon">
+              <input type="text"
+                     name="name"
+                     placeholder="e.g. John Doe"
+                     minlength="3"
+                     required>
+              <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
 
-        <!-- validation errors messages -->
-        <div class="errors-msgs">
-          <input class="invalid" type="hidden" value="Please enter a valid Phone Number">
-        </div>
-      </div>
-    </div>
-    <div class="group">
-      <label>Message</label>
-      <div class="control has-prefix-icon">
-        <textarea name="message" placeholder="Write message..." required></textarea>
-        <i class="fa fa-comments prefix-icon" aria-hidden="true"></i>
-
-        <!-- validation errors messages -->
-        <div class="errors-msgs">
-          <input class="required" type="hidden" value="Message is required">
-        </div>
-      </div>
-    </div>
-    <div class="group">
-      <div class="control">
-        <button class="submit-btn btn btn-dark" type="submit">Send</button>
-      </div>
-    </div>
-  </form>
-</div>
-
-<script>
-  document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const form = event.target;
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.ok) {
-        alert('Message sent successfully!');
-        form.reset();
-      } else {
-        alert('Failed to send message.');
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      alert('Failed to send message.');
-    });
-  });
-</script>
-
-        <!-- start of footer -->
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <!-- logo -->
-                <div class="logo" title="Ennajari">
-                  <h1><a href="index.html">Ennajari</a></h1>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                &copy; {{ copyrightDate }} All rights reserved.
-                <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noopener"></a>
+              <!-- validation errors messages -->
+              <div class="errors-msgs">
+                <input class="required" type="hidden" value="Name is required">
+                <input class="minLength" type="hidden" value="Name must be at least 3 characters">
               </div>
             </div>
           </div>
-        </footer>
-        <!-- end of footer -->
+          <div class="group">
+            <label>Email</label>
+            <div class="control has-prefix-icon">
+              <input class="ltr-dir"
+                     type="email"
+                     inputmode="email"
+                     name="email"
+                     placeholder="e.g. john.doe@gmail.com"
+                     required>
+              <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
 
-        <!-- scroll to top button -->
-        <button class="scroll-to-top" ref="scrollTopBtn"
-          title="Back To Top"
-          data-show-at="50"
-          @click="scrollToTop">
-          <svg width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-          </svg>
-        </button>
+              <!-- validation errors messages -->
+              <div class="errors-msgs">
+                <input class="required" type="hidden" value="Email is required">
+                <input class="invalid" type="hidden" value="Please enter a valid email address">
+              </div>
+            </div>
+          </div>
+          <div class="group phone-number">
+            <label>Phone <span class="optional">(Optional)</span></label>
+            <div class="control has-prefix-icon">
+              <input type="tel"
+                     inputmode="tel"
+                     name="phone"
+                     placeholder="Phone Number">
+              <i class="fa fa-phone prefix-icon" aria-hidden="true"></i>
 
-        <!-- toast notifications -->
-        <ul class="notifications-container hide-in-preloading">
-          <transition-group name="notify">
-            <li v-for="notify of notifications"
-              :key="notify.id"
-              :id="notify.id"
-              :class="['notification', 'show', notify.className, notify.time && 'timer']"
-            >
-              {{ notify.msg }}
-              <i class="fa fa-times link-hover" aria-hidden="true" @click="dismissNotify(notify.id)"></i>
-              <span v-if="notify.time"
-                class="disappearing-time"
-                :style="{ 'animation-duration': notify.time + 'ms' }"></span>
-            </li>
-          </transition-group>
-        </ul>
+              <!-- validation errors messages -->
+              <div class="errors-msgs">
+                <input class="invalid" type="hidden" value="Please enter a valid Phone Number">
+              </div>
+            </div>
+          </div>
+          <div class="group">
+            <label>Message</label>
+            <div class="control has-prefix-icon">
+              <textarea name="message" placeholder="Write message..." required></textarea>
+              <i class="fa fa-comments prefix-icon" aria-hidden="true"></i>
 
-        <!-- ajax loading -->
-        <div class="ajax-loading hide-in-preloading" v-show="isAjaxLoading">
-          <span></span>
-        </div>
+              <!-- validation errors messages -->
+              <div class="errors-msgs">
+                <input class="required" type="hidden" value="Message is required">
+              </div>
+            </div>
+          </div>
+          <div class="group">
+            <div class="control">
+              <button class="submit-btn btn btn-dark" type="submit">Send</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- js plugins file -->
-    <script src="scripts/plugins.min.js"></script>
+<!-- start of footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- logo -->
+        <div class="logo" title="Ennajari">
+          <h1><a href="index.html">Ennajari</a></h1>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        &copy; 2024 All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end of footer -->
 
-    <!-- main script file -->
-    <script src="scripts/main.min.js"></script>
+<!-- scroll to top button -->
+<button class="scroll-to-top" ref="scrollTopBtn"
+  title="Back To Top"
+  data-show-at="50"
+  @click="scrollToTop">
+  <svg width="100%" height="100%" viewBox="-1 -1 102 102">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+  </svg>
+</button>
+
+<!-- toast notifications -->
+<ul class="notifications-container hide-in-preloading">
+  <transition-group name="notify">
+    <li v-for="notify of notifications"
+      :key="notify.id"
+      :id="notify.id"
+      :class="['notification', 'show', notify.className, notify.time && 'timer']"
+    >
+      {{ notify.msg }}
+      <i class="fa fa-times link-hover" aria-hidden="true" @click="dismissNotify(notify.id)"></i>
+      <span v-if="notify.time"
+        class="disappearing-time"
+        :style="{ 'animation-duration': notify.time + 'ms' }"></span>
+    </li>
+  </transition-group>
+</ul>
+
+<!-- ajax loading -->
+<div class="ajax-loading hide-in-preloading" v-show="isAjaxLoading">
+  <span></span>
+</div>
+
+<!-- js plugins file -->
+<script src="scripts/plugins.min.js"></script>
+
+<!-- main script file -->
+<script src="scripts/main.min.js"></script>
+      </div>
+    </div>
   </body>
 </html>
