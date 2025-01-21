@@ -2448,7 +2448,7 @@ footer {
   background-color: hsl(var(--bg-color-two));
   font-size: 0.95rem;
   line-height: 1.5rem;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom: 20px;
   -webkit-box-shadow: var(--card-shadow);
   box-shadow: var(--card-shadow);
@@ -2966,6 +2966,7 @@ html[dir=rtl] .notifications-container .notify-leave-active {
     width: 80vw;
     max-width: 400px;
     margin: auto;
+    margin-top: -10%;
   }
 }
 .hero-section .hero-img .layer {
@@ -3313,8 +3314,8 @@ html[dir=rtl] .hero-section .scroll-down:after {
     min-height: calc(100vh - 70px);
     display: grid;
     place-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    /* padding-top: 80px;
+    padding-bottom: 80px; */
   }
 }
 
@@ -4330,4 +4331,49 @@ html[dir=rtl] .portfolio-page .portfolio-items .work-tools li:not(:last-of-type)
 }
 .not-found-page .not-found-content .not-found-text {
   margin-bottom: 30px;
+}
+/* ////////////////////////////////////////////////// */
+/* Styles for the about-img section */
+.about-img {
+  position: relative;
+  width: 90vw; /* Utilisez une unité relative pour la largeur */
+  max-width: 400px;
+  margin: 20px auto 40px auto; /* Ajoutez une marge pour espacer l'image de la navbar */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .about-img {
+    height: auto;
+    max-height: none;
+    margin-top: 10px; /* Ajustez la marge pour les petits écrans */
+  }
+
+  .about-img .layer {
+    height: auto;
+  }
+
+  .about-img img {
+    height: auto;
+  }
 }
