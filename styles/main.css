@@ -780,6 +780,7 @@ body .page {
           justify-content: center;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
+  margin-top: 3%;
 }
 .section .section-title .title {
   line-height: 2.6rem;
@@ -3592,9 +3593,9 @@ html[dir=rtl] .about-section .section-content .about-img .layer:first-of-type:be
             flex-direction: column-reverse;
   }
 }
-/* .experience-section .section-content > * {
+.experience-section .section-content > * {
   margin-bottom: 50px;
-} */
+}
 .experience-section .section-content .experience-timeline {
   position: relative;
 }
