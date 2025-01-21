@@ -760,13 +760,13 @@ body .page {
 .section {
   outline: none;
 }
-.section:not(.page) {
-  padding-top: 12px;
-  padding-top: 12px;
-}
+/* .section:not(.page) {
+  padding-top: 80px;
+  padding-bottom: 80px;
+} */
 .section .section-title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .section .section-title .subtitle {
   display: -webkit-box;
@@ -912,7 +912,7 @@ html[dir=rtl] .section .text-box-block .subtitle:before {
   background-color: hsl(var(--bg-color-one));
   color: hsl(var(--t-color-two));
   font-family: var(--body-font-family);
-  /* padding-top: 70px; */
+  padding-top: 70px;
   overflow-x: hidden;
   -webkit-transition: background 0.6s ease-in-out, padding-top 0.6s ease-in-out;
   transition: background 0.6s ease-in-out, padding-top 0.6s ease-in-out;
@@ -2448,7 +2448,7 @@ footer {
   background-color: hsl(var(--bg-color-two));
   font-size: 0.95rem;
   line-height: 1.5rem;
-  padding-top: 5px;
+  padding-top: 20px;
   padding-bottom: 20px;
   -webkit-box-shadow: var(--card-shadow);
   box-shadow: var(--card-shadow);
@@ -2935,7 +2935,7 @@ html[dir=rtl] .notifications-container .notify-leave-active {
 /* Responsive Design */
 @media (max-width: 768px) {
   .section {
-    padding: 30px 20px;
+    /* padding: 30px 20px; */
     margin: 30px 0;
   }
 
@@ -2966,7 +2966,6 @@ html[dir=rtl] .notifications-container .notify-leave-active {
     width: 80vw;
     max-width: 400px;
     margin: auto;
-    margin-top: -10%;
   }
 }
 .hero-section .hero-img .layer {
@@ -3129,9 +3128,9 @@ html[dir=rtl] .notifications-container .notify-leave-active {
     width: 90vw;
   }
 }
-.hero-section .hero-text h2 {
+/* .hero-section .hero-text h2 {
   margin-bottom: 30px;
-}
+} */
 html[dir=ltr] .hero-section .hero-text h2 {
   text-transform: capitalize;
 }
@@ -3314,8 +3313,8 @@ html[dir=rtl] .hero-section .scroll-down:after {
     /* min-height: calc(100vh - 70px); */
     display: grid;
     place-content: center;
-    padding-top: 12px;
-    padding-top: 12px;
+    /* padding-top: 10px;
+    padding-bottom: 80px; */
   }
 }
 
@@ -3593,9 +3592,9 @@ html[dir=rtl] .about-section .section-content .about-img .layer:first-of-type:be
             flex-direction: column-reverse;
   }
 }
-.experience-section .section-content > * {
+/* .experience-section .section-content > * {
   margin-bottom: 50px;
-}
+} */
 .experience-section .section-content .experience-timeline {
   position: relative;
 }
@@ -3617,7 +3616,7 @@ html[dir=rtl] .about-section .section-content .about-img .layer:first-of-type:be
 }
 .experience-section .section-content .experience-timeline .timepath {
   position: absolute;
-  top: 0;
+  top: -1%;
   height: 100%;
   width: calc(100% - 10px);
   display: grid;
@@ -3931,6 +3930,7 @@ html[dir=rtl] .portfolio-section .section-content .portfolio-items .works-filter
 @media (max-width: 991px) {
   .portfolio-section .section-content .portfolio-items > li [class*=text-box] {
     position: relative;
+    margin-top: 5%;
     -webkit-column-span: all;
        -moz-column-span: all;
             column-span: all;
@@ -4331,75 +4331,4 @@ html[dir=rtl] .portfolio-page .portfolio-items .work-tools li:not(:last-of-type)
 }
 .not-found-page .not-found-content .not-found-text {
   margin-bottom: 30px;
-}
-/* ////////////////////////////////////////////////// */
-/* Styles for the about-img section */
-.about-img {
-  position: relative;
-  width: 90vw; /* Utilisez une unité relative pour la largeur */
-  max-width: 400px;
-  margin: 20px auto 40px auto; /* Ajoutez une marge pour espacer l'image de la navbar */
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-img .layer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-img img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-@media (max-width: 991px) {
-  .about-img {
-    height: auto;
-    max-height: none;
-    margin-top: 10px; /* Ajustez la marge pour les petits écrans */
-  }
-
-  .about-img .layer {
-    height: auto;
-  }
-
-  .about-img img {
-    height: auto;
-  }
-}
-.social ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social-icon {
-  margin: 0 10px; /* Ajustez la marge selon vos besoins */
-}
-
-.social-icon a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px; /* Ajustez la largeur selon vos besoins */
-  height: 30px; /* Ajustez la hauteur selon vos besoins */
-  border-radius: 50%;
-  background-color: #f1f1f1; /* Couleur de fond des icônes */
-}
-
-.social-icon a i {
-  font-size: 18px; /* Ajustez la taille des icônes */
-  color: #333; /* Couleur des icônes */
 }

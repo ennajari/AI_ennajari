@@ -27,7 +27,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 <!-- Include VanillaTilt for tilt effects -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
-
     <!-- bootstrap css file -->
     <link rel="stylesheet" href="styles/bootstrap.css">
 
@@ -35,9 +34,6 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <script>
-      
-    </script>
     <div id="app">
       <div id="app-inner" ref="appRef"
         :class="[savedTheme, {'enable-focus-style': isAnyFocus}]"
@@ -187,7 +183,7 @@
             <div class="hero-text">
               <h2>AI | ML Engineering Student</h2>
               <h2>Deep Learning & GenAI Enthusiast</h2>
-              <button class="btn">GET IN TOUCH</button>
+<a href="#contact" class="btn">Get In Touch</a>
             </div>
           </div>
 
@@ -1167,6 +1163,7 @@
 <!-- end of testimonials section -->
 
 <!-- start of contact section -->
+<!-- start of contact section -->
 <div id="contact" class="contact-section section" tabindex="-1">
   <div class="container">
     <div class="section-content row">
@@ -1214,27 +1211,29 @@
           </li>
         </ul>
 
-        <!-- social links -->
-        <div class="social">
-          <ul>
-            <li class="social-icon">
-              <a href="https://www.instagram.com/abdellah.ennajari/" target="_blank" rel="noreferrer">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li class="social-icon">
-              <a href="https://github.com/ennajari" target="_blank" rel="noreferrer">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li class="social-icon">
-              <a href="https://www.linkedin.com/in/ennajari-abdellah" target="_blank" rel="noreferrer">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        
+       
+ <!-- social links -->
+ <div class="social d-flex">
+  <ul class="list-unstyled d-flex">
+    <li class="social-icon me-3">
+      <a href="https://www.instagram.com/abdellah.ennajari/" target="_blank" rel="noreferrer">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-icon me-3">
+      <a href="https://github.com/ennajari" target="_blank" rel="noreferrer">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-icon">
+      <a href="https://www.linkedin.com/in/ennajari-abdellah" target="_blank" rel="noreferrer">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+</div>
+
       <!-- contact form -->
       <div class="col-lg-6">
         <form ref="contactForm"
@@ -1315,8 +1314,8 @@
     </div>
   </div>
 </div>
+<!-- end of contact section -->
 
-<!-- start of footer -->
 <footer>
   <div class="container">
     <div class="row">
@@ -1368,7 +1367,23 @@
 
 <!-- js plugins file -->
 <script src="scripts/plugins.min.js"></script>
-
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      notifications: [
+        { id: 1, msg: 'Notification 1', className: 'success', time: 3000 },
+        { id: 2, msg: 'Notification 2', className: 'danger', time: 5000 },
+        { id: 3, msg: 'Notification 3', className: 'info', time: 2000 }
+      ]
+    },
+    methods: {
+      dismissNotify(id) {
+        this.notifications = this.notifications.filter(notify => notify.id !== id);
+      }
+    }
+  });
+</script>
 <!-- main script file -->
 <script src="scripts/main.min.js"></script>
       </div>
