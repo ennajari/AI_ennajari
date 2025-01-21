@@ -4,35 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ملف عبد الله النجاري الشخصي - يعرض مشاريع الذكاء الاصطناعي وعلوم البيانات والمهارات والخبرات.">
-    <meta name="keywords" content="ملف شخصي, وكالة, أعمال, نظيف, شركة, مؤسسي, إبداعي, معرض, rtl, حديث, تصوير, vue, vuejs, تجاوبي, sass">
-
-    <!-- عنوان علامة التبويب في المتصفح -->
+    <meta name="description" content="عبد الله النجاري - ملف شخصي يعرض مشاريع الذكاء الاصطناعي وعلم البيانات، والمهارات، والخبرات.">
+    <meta name="keywords" content="ملف شخصي، وكالة، أعمال، نظيف، شركة، شركة، إبداعي، معرض، rtl، حديث، تصوير، vue، vuejs، مستجيب، sass">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- عنوان علامة التبويب -->
     <title>ملف عبد الله النجاري الشخصي</title>
 
     <!-- أيقونة الموقع -->
     <link rel="icon" href="assets//images/favicon.ico">
-
     <!-- الخطوط -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Nafie&display=swap">
-
-    <!-- ملف المكتبات الخاص بـ CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- ملفات الأنماط النصية -->
     <link rel="stylesheet" href="styles/libraries.min.css">
-<!-- تضمين Vue.js -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-<!-- تضمين GSAP للرسوم المتحركة -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-<!-- تضمين ScrollTrigger للرسوم المتحركة عند التمرير -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-<!-- تضمين VanillaTilt لتأثيرات الانحراف -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <!-- إضافة Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- إضافة GSAP للرسوم المتحركة -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- إضافة ScrollTrigger للرسوم المتحركة عند التمرير -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <!-- إضافة VanillaTilt لتأثيرات الميل -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
 
-    <!-- ملف CSS لـ Bootstrap -->
+    <!-- ملف الأنماط النصية لـ Bootstrap -->
     <link rel="stylesheet" href="styles/bootstrap.css">
 
-    <!-- الملف الرئيسي للأنماط -->
+    <!-- الملف الرئيسي للأنماط النصية -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
@@ -48,20 +47,20 @@
         <div class="circle-cursor circle-cursor-outer" ref="circleCursorOuter"></div>
         <div class="circle-cursor circle-cursor-inner" ref="circleCursorInner"></div>
 
-        <!-- بداية الشاشة الأولية -->
+        <!-- بداية الشاشة الافتتاحية-->
         <div class="preloader" ref="preloader">
           <div class="preloader-content">
             <div class="logo">
-              <img src="assets/images/favicon.gif" alt="Your Logo">
+              <img src="assets/images/favicon.gif" alt="شعارك">
             </div>
             <div class="loading-bar">
               <span class="loading-bar-progress"></span>
             </div>
           </div>
         </div>
-        <!-- نهاية الشاشة الأولية -->
+        <!-- نهاية الشاشة الافتتاحية-->
 
-        <!-- بداية الرأس -->
+        <!-- بداية العنوان -->
         <header class="hide-in-preloading" :class="{
           'big-header': isHeaderBig,
           'small-header': !isHeaderBig,
@@ -85,17 +84,17 @@
                 </li>
               </ul>
 
-              <!-- محتوى القائمة في الأجهزة الكبيرة (مخفي في الهاتف والحاسوب اللوحي) -->
+              <!-- محتوى القائمة في الأجهزة الكبيرة (مخفي في الهاتف/اللوحة) -->
               <div class="desktop-menu-content" tabindex="-1">
                 <div class="container">
 
-                  <!-- قسم من نحن -->
+                  <!-- قسم عني -->
                   <div class="about-us">
                     <p>
-                      أنا مهتم بالذكاء الاصطناقي والتكنولوجيا، ودائماً أسعى لخلق حلول مبتكرة وذات تأثير.
+                      أنا مهتم بالذكاء الاصطناعي والتكنولوجيا، ودائماً أسعى لإنشاء حلول مبتكرة وذات تأثير.
                     </p>
                     <h4 class="block-title">
-                      بفضل الأساس القوي في مجال الذكاء الاصطناعي وعلوم الحاسوب والرياضيات، أنا متخصص في تطوير تطبيقات مبتكرة والتعاون في مشاريع مبتكرة لدفع حدود التكنولوجيا.
+                      بفضل أساس قوي في الذكاء الاصطناعي وعلوم الحاسوب والرياضيات، أتخصص في تطوير تطبيقات مبتكرة والتعاون في مشاريع مبتكرة لدفع حدود التكنولوجيا.
                     </h4>
                   </div>
 
@@ -105,7 +104,7 @@
                     <li class="col-lg-4">
                       <h4 class="block-title">البريد الإلكتروني</h4>
                       <ul>
-                        <li><a href="mailto:abdellah.ennajari@example.com">abdellah.ennajari@example.com</a></li>
+                        <li><a href="mailto:abdellahennajari2018@gmail.com">abdellahennajari2018@gmail.com</a></li>
                       </ul>
                     </li>
 
@@ -131,7 +130,7 @@
               </div>
             </nav>
 
-            <!-- أيقونات الخيارات -->
+            <!-- أزرار الخيارات -->
             <ul class="options-icons">
 
               <!-- زر تبديل اللغة -->
@@ -152,12 +151,12 @@
                 </ul>
               </li>
 
-              <!-- زر تبديل السمة -->
+              <!-- زر تبديل الموضوع -->
               <li class="theme-switcher">
                 <button :class="savedTheme" title="تغيير الوضع" @click="changeAppTheme"></button>
               </li>
 
-              <!-- زر الهمبرجر -->
+              <!-- زر القائمة الجانبية -->
               <li class="hamburger-btn" :class="{'open': isNavMenuOpen}">
                 <button @click="toggleNavMenu"
                   title="تبديل القائمة الجانبية"
@@ -171,7 +170,7 @@
             </ul>
           </div>
         </header>
-        <!-- نهاية الرأس -->
+        <!-- نهاية العنوان -->
 
         <!-- بداية قسم البطل -->
         <div id="hero"
@@ -186,27 +185,27 @@
 
           <div class="hero-text">
             <h2>
-              مهندس هندسة الذكاء الاصطناعي | طالب تعلم الآلة والتعميق
+              طالب الذكاء الاصطناعي | تعلم الآلة
               <br>
-              هواة الذكاء الاصطناعي والتعلم العميق والذكاء الاصطناعي العام
+              عاشق تعلم العميق والذكاء الاصطناعي العام
             </h2>
-            <a href="#contact" class="btn">ابقى على تواصل</a>
+            <a href="#contact" class="btn">تواصل معي</a>
           </div>
 
           <div class="social">
             <ul>
               <li>
-                <a href="https://www.instagram.com/abdellah.ennajari/" target="_blank" rel="noreferrer" v-tooltip="{text: 'فيسبوك', dir: 'right'}">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="https://www.instagram.com/abdellah.ennajari/" target="_blank" rel="noreferrer" v-tooltip="{text: 'إنستغرام', dir: 'right'}">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="www.linkedin.com/in/ennajari-abdellah" target="_blank" rel="noreferrer" v-tooltip="{text: 'تويتر', dir: 'right'}">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                <a href="https://github.com/ennajari" target="_blank" rel="noreferrer" v-tooltip="{text: 'GitHub', dir: 'right'}">
+                  <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'لينكد إن', dir: 'right'}">
+                <a href="https://www.linkedin.com/in/ennajari-abdellah" target="_blank" rel="noreferrer" v-tooltip="{text: 'LinkedIn', dir: 'right'}">
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
@@ -214,7 +213,7 @@
           </div>
 
           <div class="scroll-down">
-            <a href="#about" title="التمرير لأسفل">انتقل</a>
+            <a href="#about" title="تمرير لأسفل">تمرير</a>
           </div>
         </div>
         <!-- نهاية قسم البطل -->
@@ -266,29 +265,29 @@
         </div>
         <!-- نهاية قسم الإحصائيات -->
 
-        <!-- بداية قسم من نحن -->
+        <!-- بداية قسم عني -->
         <div id="about" class="about-section section" tabindex="-1" ref="aboutSection">
           <div class="container">
             <div class="section-content row">
 
-              <!-- صورة من نحن -->
+              <!-- صورة عني -->
               <div class="about-img col-lg-6">
                 <div class="layer" v-clone>
                   <img src="assets/images/hero-img2.png" alt="اسم المستخدم">
                 </div>
               </div>
 
-              <!-- مربع النص -->
+              <!-- نص عني -->
               <div class="about-text col-lg-6">
                 <div class="text-box-inline">
-                  <span class="subtitle">من أنا</span>
+                  <span class="subtitle">عني</span>
                   <h2>
-                    تبحث عن الابتكار؟
+                    هل تبحث عن الابتكار؟
                     <br>
-                    نعمل معا!
+                    دعونا نتعاون!
                   </h2>
                   <p>
-                    مرحبا! أنا عبد الله النجاري، مهندس ذكاء اصطناعي ومطور بخلفية قوية في العلوم الرياضية وعلوم الحاسوب. أنا مهتم بخلق حلول تكنولوجية ذات تأثير، متخصص في الذكاء الاصطناعي والمشاريع المبتكرة. أستمتع بتحويل الأفكار إلى واقع باستخدام خوارزميات متقدمة ونهج إبداعي. أنا دائماً متلهف لتعلم تكنولوجيات وأدوات ومفاهيم جديدة لتعزيز مهاراتي. بالإضافة إلى العمل على مشاريع فردية مركزة على الذكاء الاصطناعي، أزدهر في البيئات التعاونية التي تقدر العمل الجماعي والابتكار.
+                    أهلاً وسهلاً! أنا عبد الله النجاري، مهتم بالذكاء الاصطناعي والتكنولوجيا، ودائماً أسعى لإنشاء حلول مبتكرة وذات تأثير. أتخصص في الذكاء الاصطناعي والمشاريع المبتكرة، وأستمتع بتحويل الأفكار إلى واقع باستخدام الخوارزميات المتقدمة والنهج الإبداعي. دائماً ما أكون متلهفاً لتعلم تكنولوجيات وأدوات ومفاهيم جديدة لتحسين مهاراتي. بالإضافة إلى العمل على مشاريع الذكاء الاصطناعي الفردية، أزدهر في البيئات التعاونية التي تقدر العمل الجماعي والابتكار.
                   </p>
                   <div class="btns-container">
                     <a href="#contact" class="btn btn-primary">استأجرني</a>
@@ -300,24 +299,24 @@
             </div>
           </div>
         </div>
-        <!-- نهاية قسم من نحن -->
+        <!-- نهاية قسم عني -->
 
         <!-- بداية قسم المهارات -->
         <div id="skills" class="skills-section section" tabindex="-1">
           <div class="container">
             <div class="section-content row">
 
-              <!-- مربع النص -->
+              <!-- نص المهارات -->
               <div class="skills-text col-lg-6">
                 <div class="text-box-inline">
                   <span class="subtitle">مهاراتي</span>
                   <h2>
-                    الخبرة التي تحرك
+                    الخبرة التي تدفع
                     <br>
                     الابتكار التكنولوجي
                   </h2>
                   <p>
-                    أمتلك مجموعة قوية من المهارات في هندسة الذكاء الاصطناعي وهندسة البرمجيات وحل المشكلات، مما يتيح لي تصميم حلول مبتكرة مخصصة للتحديات المعقدة. أنا بارع في العمل مع التكنولوجيات المتقدمة، واستغلال معرفتي في البرمجة والأدوات التحليلية.
+                    لدي مجموعة قوية من المهارات في هندسة الذكاء الاصطناعي وهندسة البرمجيات وحل المشكلات، والتي تتيح لي تصميم حلول مبتكرة مخصصة للتحديات المعقدة. أتميز في العمل مع التكنولوجيات المتقدمة، مستغلاً معرفتي في البرمجة وأدوات التحليل.
                   </p>
                   <div ref="skillsSwitchBtn" class="toggle-switch-btn">
                     <input id="skills-list" type="radio" value="skills" v-model="skillsType" checked>
@@ -332,353 +331,353 @@
               <!-- عناصر المهارات -->
               <div class="skills-items col-lg-6">
 
-                <!-- قائمة المهارات -->
-                <ul v-staggerdelay="50" v-show="skillsType === 'skills'">
-                  <li tabindex="0" v-tooltip="{text: 'برمجة بايثون', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/python-icon.png" alt="بايثون">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'هندسة تعلم الآلة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/ml-icon.png" alt="تعلم الآلة">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'التعلم العميق', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/deep-learning-icon.png" alt="التعلم العميق">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'هندسة الويب', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/web-dev-icon.png" alt="هندسة الويب">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'تحليل البيانات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/data-analysis-icon.png" alt="تحليل البيانات">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'معالجة اللغة الطبيعية', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/nlp.png" alt="معالجة اللغة الطبيعية">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'الرؤية الحاسوبية', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/comp.png" alt="الرؤية الحاسوبية">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'علوم البيانات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/data.png" alt="علوم البيانات">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'التطوير المتقدم لبايثون بما في ذلك FastAPI وFlask', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/python-icon.png" alt="بايثون">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'تطوير خطوط أنابيب ML من البداية إلى النهاية', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/ml-icon.png" alt="تعلم الآلة">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'تصميم وتحسين هيكلية الشبكات العصبية', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/deep-learning-icon.png" alt="التعلم العميق">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'التطوير الكامل للملف باستخدام React وNode.js', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/web-dev-icon.png" alt="هندسة الويب">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'التحليل الإحصائي وتصور البيانات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/data-analysis-icon.png" alt="تحليل البيانات">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'أتمتة ونشر خطوط أنابيب ML', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/mlops.png" alt="MLOps">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'معالجة النصوص ونماذج اللغة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/nlp.png" alt="معالجة اللغة الطبيعية">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'أنظمة الذكاء الاصطناعي البصري ومعالجة الصور', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/comp.png" alt="الرؤية الحاسوبية">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'هيكلية نظام الذكاء الاصطناعي القابلة للتوسع', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/sys.png" alt="تصميم النظام">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Adobe After Effects لتحرير الفيديو والرسوم المتحركة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Ae.png" alt="تصميم النظام">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Adobe Illustrator للتصميم الرسومي', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Ai.png" alt="تصميم النظام">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'برمجة جافا', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/java-logo.png" alt="Java">
-                    </div>
-                  </li>
-                </ul>
-
-                <!-- قائمة الأدوات -->
-                <ul v-staggerdelay="50" v-show="skillsType === 'tools'">
-                  <li tabindex="0" v-tooltip="{text: 'Anaconda لإدارة البيئة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/anaconda-icon.png" alt="Anaconda">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Jupyter Notebook للهندسة التفاعلية', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/jupyter-icon.png" alt="Jupyter Notebook">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Git للتحكم في الإصدار والتعاون', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/git-icon.png" alt="Git">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'TensorFlow لبناء نماذج الذكاء الاصطناعي', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/tensorflow-icon.png" alt="TensorFlow">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'PyTorch للشبكات العصبية المتقدمة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/pytorch-icon.png" alt="PyTorch">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Docker لتحويل الحاويات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Docker.png" alt="Docker">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'VS Code للتطوير', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/VS Code.png" alt="VS Code">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'MySQL لإدارة قاعدة البيانات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/MySQL.png" alt="MySQL">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'MongoDB لقاعدة بيانات NoSQL', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/mongo.png" alt="MongoDB">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'إدارة البيئة وتوزيع الحزم', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/anaconda-icon.png" alt="Anaconda">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'التطوير التفاعلي والتجريب', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/jupyter-icon.png" alt="Jupyter Notebook">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'تطوير نماذج ML جاهزة للإنتاج', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/tensorflow-icon.png" alt="TensorFlow">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'التعلم العميق الموجه للبحث', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/pytorch-icon.png" alt="PyTorch">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'أتمتة الحاويات والنشر', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Docker.png" alt="Docker">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'أتمتة الحاويات على نطاق واسع', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Kubernetes.png" alt="Kubernetes">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'إدارة دورة حياة ML', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/mlflow.png" alt="MLflow">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'تتبع تجارب ML', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Weights.svg" alt="Weights & Biases">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'نماذج NLP رائدة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/hug.png" alt="Hugging Face">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'إطار عمل الحوسبة الموزعة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/ray.png" alt="Ray">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'التحكم في إصدار البيانات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/dvc.Default" alt="DVC">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Adobe Illustrator للتصميم الرسومي', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Ai.png" alt="Adobe Illustrator">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Adobe After Effects لتحرير الفيديو والرسوم المتحركة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Ae.png" alt="Adobe After Effects">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Scikit-learn لتعلم الآلة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Scikit-learn.png" alt="Scikit-learn">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'NumPy للحساب العددي', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/NumPy.png" alt="NumPy">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Pandas لتلاعب بالبيانات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/pandas.png" alt="Pandas">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Matplotlib لتصور البيانات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Matplotlib.png" alt="Matplotlib">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Seaborn لتصور البيانات الإحصائية', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/seaborn.png" alt="Seaborn">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Oracle لإدارة قاعدة البيانات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/oracle.png" alt="Oracle">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'SQL Developer لإدارة قاعدة البيانات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/SQL.png" alt="SQL Developer">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'SQL*Plus لإدارة قاعدة البيانات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/sqlplus.png" alt="SQL*Plus">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'PhpMyAdmin لإدارة قاعدة البيانات', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/phpmyadmin.png" alt="PhpMyAdmin">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'GitHub للتحكم في الإصدار والتعاون', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/github.jpg" alt="GitHub">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Jira لإدارة المشاريع', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Jira.png" alt="Jira">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'PyCharm لتطوير بايثون', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/pycharm.png" alt="PyCharm">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'StarUML للنمذجة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/staruml.png" alt="StarUML">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Linux (Ubuntu) لنظام التشغيل', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/linux.png" alt="Linux">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Windows (10, 11) لنظام التشغيل', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Windows.png" alt="Windows">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'HTML5 لتطوير الويب', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/HTML5.png" alt="HTML5">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'CSS3 لتطوير الويب', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/CSS3.png" alt="CSS3">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'JavaScript لتطوير الويب', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/JavaScript.png" alt="JavaScript">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'React.js لتطوير الويب', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/React.png" alt="React.js">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Node.js لتطوير الويب', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Node.png" alt="Node.js">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'PHP لتطوير الويب', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/php.png" alt="PHP">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Laravel لتطوير الويب', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Laravel.png" alt="Laravel">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Scrum لمنهجية العمل السريع', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/scrum.png" alt="Scrum">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'UML للنمذجة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/UML.png" alt="UML">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Merise للنمذجة', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Merise.png" alt="Merise">
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- نهاية قسم المهارات -->
+<!-- قائمة المهارات -->
+<ul v-staggerdelay="50" v-show="skillsType === 'skills'">
+  <li tabindex="0" v-tooltip="{text: 'برمجة بيثون', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/python-icon.png" alt="بيثون">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'هندسة تعلم الآلة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/ml-icon.png" alt="تعلم الآلة">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'التعلم العميق', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/deep-learning-icon.png" alt="التعلم العميق">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'هندسة الويب', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/web-dev-icon.png" alt="هندسة الويب">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'تحليل البيانات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/data-analysis-icon.png" alt="تحليل البيانات">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'معالجة اللغة الطبيعية', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/nlp.png" alt="معالجة اللغة الطبيعية">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'الرؤية الحاسوبية', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/comp.png" alt="الرؤية الحاسوبية">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'علم البيانات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/data.png" alt="علم البيانات">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'تطوير بيثون المتقدم بما في ذلك FastAPI وFlask', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/python-icon.png" alt="بيثون">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'تطوير أنابيب تعلم الآلة من البداية إلى النهاية', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/ml-icon.png" alt="تعلم الآلة">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'تصميم وتحسين هندسة الشبكات العصبية', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/deep-learning-icon.png" alt="التعلم العميق">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'تطوير الويب الكامل مع React وNode.js', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/web-dev-icon.png" alt="هندسة الويب">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'التحليل الإحصائي وتصور البيانات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/data-analysis-icon.png" alt="تحليل البيانات">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'أتمتة ونشر أنابيب تعلم الآلة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/mlops.png" alt="MLOps">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'معالجة النصوص ونماذج اللغة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/nlp.png" alt="معالجة اللغة الطبيعية">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'معالجة الصور وأنظمة الذكاء الاصطناعي البصري', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/comp.png" alt="الرؤية الحاسوبية">
+    </div>
+  </li>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'هندسة النظام القابل للتوسع للذكاء الاصطناعي', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/sys.png" alt="تصميم النظام">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Adobe After Effects لتحرير الفيديو والرسوم المتحركة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Ae.png" alt="تصميم النظام">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Adobe Illustrator للتصميم الرسومي', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Ai.png" alt="تصميم النظام">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'برمجة جافا', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/java-logo.png" alt="الشعار">
+    </div>
+  </li>
+</ul>
+ <!-- قائمة الأدوات -->
+ <ul v-staggerdelay="50" v-show="skillsType === 'tools'">
+  <li tabindex="0" v-tooltip="{text: 'Anaconda لإدارة البيئة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/anaconda-icon.png" alt="Anaconda">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Jupyter Notebook للهندسة التفاعلية', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/jupyter-icon.png" alt="Jupyter Notebook">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Git للتحكم بالإصدار والتعاون', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/git-icon.png" alt="Git">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'TensorFlow لبناء نماذج الذكاء الاصطناعي', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/tensorflow-icon.png" alt="TensorFlow">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'PyTorch للشبكات العصبية المتقدمة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/pytorch-icon.png" alt="PyTorch">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Docker للحاويات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Docker.png" alt="Docker">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'VS Code للتطوير', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/VS Code.png" alt="VS Code">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'MySQL لإدارة قواعد البيانات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/MySQL.png" alt="MySQL">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'MongoDB لقاعدة بيانات غير SQL', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/mongo.png" alt="MongoDB">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'إدارة البيئة وتوزيع الحزم', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/anaconda-icon.png" alt="Anaconda">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'التطوير والتجربة التفاعلية', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/jupyter-icon.png" alt="Jupyter Notebook">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'تطوير نماذج تعلم الآلة جاهزة للإنتاج', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/tensorflow-icon.png" alt="TensorFlow">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'التعلم العميق الموجه للبحث', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/pytorch-icon.png" alt="PyTorch">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'تنسيق الحاويات والنشر', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Docker.png" alt="Docker">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'تنسيق الحاويات على نطاق واسع', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Kubernetes.png" alt="Kubernetes">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'إدارة دورة حياة تعلم الآلة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/mlflow.png" alt="MLflow">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'تتبع تجارب تعلم الآلة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Weights.svg" alt="Weights & Biases">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'نماذج NLP الرائدة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/hug.png" alt="Hugging Face">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'إطار عمل للحوسبة الموزعة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/ray.png" alt="Ray">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'التحكم بالإصدار للبيانات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/dvc.Default" alt="DVC">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Adobe Illustrator للتصميم الرسومي', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Ai.png" alt="Adobe Illustrator">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Adobe After Effects لتحرير الفيديو والرسوم المتحركة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Ae.png" alt="Adobe After Effects">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Scikit-learn لتعلم الآلة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Scikit-learn.png" alt="Scikit-learn">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'NumPy للحسابات العددية', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/NumPy.png" alt="NumPy">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Pandas لمعالجة البيانات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/pandas.png" alt="Pandas">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Matplotlib لتصور البيانات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Matplotlib.png" alt="Matplotlib">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Seaborn لتصور البيانات الإحصائية', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/seaborn.png" alt="Seaborn">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Oracle لإدارة قواعد البيانات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/oracle.png" alt="Oracle">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'SQL Developer لإدارة قواعد البيانات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/SQL.png" alt="SQL Developer">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'SQL*Plus لإدارة قواعد البيانات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/sqlplus.png" alt="SQL*Plus">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'PhpMyAdmin لإدارة قواعد البيانات', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/phpmyadmin.png" alt="PhpMyAdmin">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'GitHub للتحكم بالإصدار والتعاون', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/github.jpg" alt="GitHub">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Jira لإدارة المشاريع', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Jira.png" alt="Jira">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'PyCharm لتطوير بيثون', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/pycharm.png" alt="PyCharm">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'StarUML للنمذجة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/staruml.png" alt="StarUML">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Linux (Ubuntu) لنظام التشغيل', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/linux.png" alt="Linux">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Windows (10, 11) لنظام التشغيل', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Windows.png" alt="Windows">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'HTML5 لتطوير الويب', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/HTML5.png" alt="HTML5">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'CSS3 لتطوير الويب', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/CSS3.png" alt="CSS3">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'JavaScript لتطوير الويب', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/JavaScript.png" alt="JavaScript">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'React.js لتطوير الويب', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/React.png" alt="React.js">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Node.js لتطوير الويب', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Node.png" alt="Node.js">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'PHP لتطوير الويب', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/php.png" alt="PHP">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Laravel لتطوير الويب', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Laravel.png" alt="Laravel">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Scrum لمنهجية التنمية السريعة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/scrum.png" alt="Scrum">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'UML للنمذجة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/UML.png" alt="UML">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Merise للنمذجة', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Merise.png" alt="Merise">
+    </div>
+  </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- نهاية قسم المهارات -->
 
         <!-- بداية قسم الخبرة -->
         <div id="experience" class="experience-section section" tabindex="-1">
@@ -712,17 +711,17 @@
                 </div>
               </div>
 
-              <!-- مربع النص -->
+              <!-- نص الخبرة -->
               <div class="experience-text col-lg-6">
                 <div class="text-box-inline">
                   <span class="subtitle">الخبرة</span>
                   <h2>
                     4+ سنوات من الخبرة
                     <br>
-                    مع مشاريع مبتكرة!
+                    بمشاريع مبتكرة!
                   </h2>
                   <p>
-                    لقد كنت أعمل على تطبيقات الذكاء الاصطناعي ونمذجة ثلاثية الأبعاد لأكثر من 4 سنوات، مع التركيز على إنشاء حلول تكون مبتكرة وسهلة الاستخدام. من تصميم تطبيقات ذكية إلى تطوير عروض منتجات تفاعلية 360 درجة، أهدف إلى تقديم نتائج ذات تأثير من خلال استخدام التكنولوجيات المتقدمة والإبداع.
+                    لقد كنت أعمل على تطبيقات الذكاء الاصطناعي ونمذجة ثلاثية الأبعاد لأكثر من 4 سنوات، مركزاً على إنشاء حلول جديدة وسهلة الاستخدام. من تصميم تطبيقات بديهية إلى تطوير عروض تفاعلية للمنتجات ثلاثية الأبعاد، أهدف إلى تقديم نتائج ذات تأثير عن طريق استغلال التكنولوجيات المتقدمة والإبداع.
                   </p>
                 </div>
               </div>
@@ -732,22 +731,22 @@
         </div>
         <!-- نهاية قسم الخبرة -->
 
-        <!-- بداية قسم ملف الأعمال -->
+        <!-- بداية قسم المحفظة -->
         <div id="portfolio" class="portfolio-section section" tabindex="-1">
           <div class="container">
             <div class="section-content">
 
-              <!-- عناصر ملف الأعمال -->
-              <ul class="portfolio-items has-works" ref="portfolioItems" data-no-works-msg="لا توجد أعمال لتحميل">
+              <!-- عناصر المحفظة -->
+              <ul class="portfolio-items has-works" ref="portfolioItems" data-no-works-msg="لا توجد أعمال للتحميل">
                 <li>
                   <!-- قسم المقدمة -->
                   <div class="text-box-inline">
-                    <span class="subtitle">ملفي الشخصي</span>
+                    <span class="subtitle">محفظتي</span>
                     <h2>
-                      استكشف مشاريعي في الذكاء الاصطناعي وتعلم الآلة والتعلم العميق والذكاء الاصطناعي العام
+                      استكشف مشاريعي في الذكاء الاصطناعي، وتعلم الآلة، والتعلم العميق، والذكاء الاصطناعي العام
                     </h2>
                     <p>
-                      كطالب هندسة الذكاء الاصطناعي مع التركيز على تعلم الآلة وعلوم البيانات والتعلم العميق، أنا متحمس لتطبيق معرفتي على مشاريع مبتكرة. تحقق من أعمالي التي تعرض مهاراتي التقنية وإبداعي.
+                      كطالب هندسة الذكاء الاصطناعي مركزاً على تعلم الآلة، وعلم البيانات، والتعلم العميق، أنا شغوف بتطبيق معرفتي على مشاريع مبتكرة. تحقق من أعمالي التي تعرض خبرتي الفنية والإبداع.
                     </p>
                     <ul class="works-filter">
                       <li v-for="filter in filters" :key="filter">
@@ -759,7 +758,7 @@
                   </div>
                 </li>
 
-                <!-- قائمة عناصر ملف الأعمال -->
+                <!-- قائمة عناصر المحفظة -->
                 <li class="portfolio-item" v-for="work in filteredPortfolioItems" :key="work.title.ar">
                   <a :href="work.url" target="_blank" rel="noopener">
                     <div class="item-img">
@@ -785,255 +784,598 @@
             </div>
           </div>
         </div>
-        <!-- نهاية قسم ملف الأعمال -->
+        <!-- نهاية قسم المحفظة -->
 
-        <!-- بداية قسم الشهادات -->
-        <div id="testimonials" class="testimonials-section section" tabindex="-1" ref="testimonialsSection">
-          <div class="container">
-            <div class="section-title">
-              <span class="subtitle">الشهادات</span>
-              <h2 class="title">
-                ماذا يقول الناس
-                <br>
-                عن عملي؟
-              </h2>
-
-            <div class="section-content">
-              <ul class="testimonials-items" v-staggerdelay="500">
-                <li class="has-ultimate-tooltip"
-                  tabindex="0"
-                  v-for="item in testimonialsItems"
-                  :key="item.quoteAuthor.ar">
-                  <div class="testimonials-item">
-                    <div class="testimonial-author-img">
-                      <img :src="item.imgUrl || 'assets/images/testimonials/anonymous-user.png'" :alt="item.quoteAuthor.ar">
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- قسم التعليم -->
+    <section id="education" class="section" tabindex="-1">
+      <div class="container">
+          <div class="section-title">
+              <span class="subtitle">📚 رحلة التعليم</span>
+              <h2 class="title">الخلفية التعليمية</h2>
+          </div>
+          <div class="section-content">
+              <ul class="education-items">
+                  <li>
+                      <div class="education-item">
+                          <button class="education-btn" onclick="toggleDetails('eniad')">
+                              <div class="education-header">
+                                  <span class="year">2023 – الآن</span>
+                                  <span class="title">المدرسة الوطنية للذكاء الاصطناعي والرقمية (ENIAD)</span>
+                                  <span class="emoji">🎓</span>
+                              </div>
+                          </button>
+                          <div id="eniad" class="education-details">
+                              <p class="degree">درجة الهندسة في الذكاء الاصطناعي</p>
+                              <ul class="achievements">
+                                  <li>🤖 تخصص في الذكاء الاصطناعي وعلم البيانات</li>
+                                  <li>📊 دورات دراسية متقدمة في تعلم الآلة، والتعلم العميق، وعلم البيانات</li>
+                                  <li>👁️ مشاريع عملية في الرؤية الحاسوبية، ومعالجة اللغة الطبيعية (NLP)، وتصنيف الصور</li>
+                                  <li>🔬 التركيز على البحث في تطبيقات الذكاء الاصطناعي والتكنولوجيات المبتكرة</li>
+                                  <li>👥 عضو نشط في جمعية طلاب الذكاء الاصطناعي، يشارك في المسابقات والهكاثونات</li>
+                                  <li>🏆 أنشأ نظام للتعرف على الزهور في الوقت الفعلي بدقة 95% باستخدام TensorFlow وStreamlit</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="education-item">
+                          <button class="education-btn" onclick="toggleDetails('ibn-zohr')">
+                              <div class="education-header">
+                                  <span class="year">2021 – 2023</span>
+                                  <span class="title">جامعة ابن زهر، ورزازات</span>
+                                  <span class="emoji">🏛️</span>
+                              </div>
+                          </button>
+                          <div id="ibn-zohr" class="education-details">
+                              <p class="degree">درجة الليسانس في الرياضيات وعلوم الحاسوب</p>
+                              <ul class="achievements">
+                                  <li>📐 دورات دراسية متقدمة في الرياضيات والخوارزميات</li>
+                                  <li>💻 أساسيات علم الحاسوب، بما في ذلك البرمجة وهندسة البرمجيات</li>
+                                  <li>🔧 مبادئ هندسة البرمجيات وإدارة المشاريع</li>
+                                  <li>🏆 أول الدفعة بمشروع نهائي عن توليد جداول زمنية تلقائية باستخدام خوارزميات وراثية</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="education-item">
+                          <button class="education-btn" onclick="toggleDetails('french-cert')">
+                              <div class="education-header">
+                                  <span class="year">2023</span>
+                                  <span class="title">شهادة الكفاءة في اللغة الفرنسية</span>
+                                  <span class="emoji">🇫🇷</span>
+                              </div>
+                          </button>
+                          <div id="french-cert" class="education-details">
+                              <p class="degree">Campus France</p>
+                              <ul class="achievements">
+                                  <li>🗣️ مهارات متقدمة في اللغة الفرنسية (مستوى B2)</li>
+                                  <li>✍️ كفاءة في الكتابة المهنية</li>
+                                  <li>🎯 التركيز على الاتصال التجاري</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="education-item">
+                        <button class="education-btn" onclick="toggleDetails('youcode')">
+                            <div class="education-header">
+                                <span class="year">يوليو 2023</span>
+                                <span class="title">YouCode، اليوسفية</span>
+                                <span class="emoji">💻</span>
+                            </div>
+                        </button>
+                        <div id="youcode" class="education-details">
+                            <p class="degree">تدريب مكثف في تطوير الويب الكامل</p>
+                            <ul class="achievements">
+                                <li>تعلم التكنولوجيات والإطارات الحديثة للويب</li>
+                                <li>إنجاز مشاريع عملية باستخدام HTML5، CSS3، JavaScript، وPHP</li>
+                                <li>الحصول على خبرة في منهجيات التنمية السريعة</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="ultimate-tooltip">
-                      <p>{{ item.quoteContent.ar }}</p>
-                      <h4 class="ultimate-tooltip-title">{{ item.quoteAuthor.ar }}</h4>
-                      <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.ar }}</h5>
-                    </div>
-                    <div class="ultimate-tooltip-arrow"></div>
-                  </div>
                 </li>
+                  <li>
+                      <div class="education-item">
+                          <button class="education-btn" onclick="toggleDetails('high-school')">
+                              <div class="education-header">
+                                  <span class="year">2020</span>
+                                  <span class="title">ثانوية الورود، قلعة مكونة</span>
+                                  <span class="emoji">🏫</span>
+                              </div>
+                          </button>
+                          <div id="high-school" class="education-details">
+                              <p class="degree">البكالوريوس في العلوم الفيزيائية والكيميائية</p>
+                              <ul class="achievements">
+                                  <li>🔬 أساس قوي في الفيزياء والكيمياء</li>
+                                  <li>📚 تعليم شامل في الرياضيات والعلوم</li>
+                                  <li>🏆 أداء أكاديمي ممتاز</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li>
+
+              </ul>
+          </div>
+      </div>
+    </section>
+
+<!-- قسم المقالات الأخيرة -->
+<section id="recent-articles" class="section" tabindex="-1">
+  <div class="container">
+      <div class="section-title">
+          <span class="subtitle">📝 آخر الرؤى</span>
+          <h2 class="title">المقالات الأخيرة</h2>
+      </div>
+      <div class="section-content">
+          <ul class="articles-items">
+              <li class="article-item">
+                  <a href="article1.html" class="article-link">
+                      <span class="emoji">🤖</span>
+                      <h3 class="article-title">مستقبل الذكاء الاصطناعي</h3>
+                      <p class="article-date">يناير 2025</p>
+                      <p class="article-snippet">اكتشف كيف يعيد الذكاء الاصطناعي تشكيل الصناعات وإعادة تعريف الابتكار.</p>
+                      <span class="read-more">اقرأ المزيد →</span>
+                  </a>
+              </li>
+              <li class="article-item">
+                  <a href="article2.html" class="article-link">
+                      <span class="emoji">📊</span>
+                      <h3 class="article-title">تحليل البيانات الكبيرة: فتح الرؤى الخفية</h3>
+                      <p class="article-date">ديسمبر 2024</p>
+                      <p class="article-snippet">تعلم عن أحدث التقنيات في تحليل البيانات الكبيرة.</p>
+                      <span class="read-more">اقرأ المزيد →</span>
+                  </a>
+              </li>
+              <li class="article-item">
+                  <a href="article3.html" class="article-link">
+                      <span class="emoji">💊</span>
+                      <h3 class="article-title">تعلم الآلة في مجال الرعاية الصحية</h3>
+                      <p class="article-date">نوفمبر 2024</p>
+                      <p class="article-snippet">استكشف كيف يثور تعلم الآلة على تشخيصات الطب.</p>
+                      <span class="read-more">اقرأ المزيد →</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+<script>
+  // تبديل تفاصيل التعليم
+  function toggleDetails(id) {
+      const details = document.getElementById(id);
+      const allDetails = document.querySelectorAll('.education-details');
+      const currentButton = details.previousElementSibling;
+      const allButtons = document.querySelectorAll('.education-btn');
+
+      // إغلاق جميع التفاصيل الأخرى
+      allDetails.forEach(detail => {
+          if (detail.id !== id && detail.style.display === 'block') {
+              detail.style.display = 'none';
+              detail.previousElementSibling.classList.remove('active');
+          }
+      });
+
+      // تبديل التفاصيل الحالية
+      if (details.style.display === 'block') {
+          details.style.display = 'none';
+          currentButton.classList.remove('active');
+      } else {
+          details.style.display = 'block';
+          currentButton.classList.add('active');
+          // تمرير ناعم إلى التفاصيل
+          details.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+  }
+
+  // رسومات المقال
+  function handleArticleAnimation() {
+      const articles = document.querySelectorAll('.article-item');
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  setTimeout(() => {
+                      entry.target.style.opacity = '1';
+                      entry.target.style.transform = 'translateY(0)';
+                  }, entry.target.dataset.delay || 0);
+              }
+          });
+      }, { threshold: 0.1 });
+
+      articles.forEach((article, index) => {
+          article.dataset.delay = index * 150; // تأخير الرسومات
+          observer.observe(article);
+      });
+  }
+
+  // تهيئة الموضوع بناءً على تفضيل النظام
+  function initializeTheme() {
+      // تحقق مما إذا كان لدى المستخدم تفضيل محفوظ
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+          return;
+      }
+
+      // تحقق من تفضيل النظام
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+      }
+  }
+
+  // معالجة تغييرات الموضوع النظامي
+  function handleSystemThemeChange() {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+          if (!localStorage.getItem('theme')) { // تغيير فقط إذا لم يحدد المستخدم تفضيلاً
+              document.documentElement.setAttribute('data-theme', event.matches ? 'dark' : 'light');
+          }
+      });
+  }
+
+  // إضافة التمرير الناعم لجميع الروابط الداخلية
+  function initializeSmoothScroll() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href');
+              if (targetId === '#') return;
+
+              const target = document.querySelector(targetId);
+              if (target) {
+                  target.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start'
+                  });
+              }
+          });
+      });
+  }
+
+  // إضافة مراقب التقاطع للرسومات التلاشية
+  function initializeScrollAnimations() {
+      const elements = document.querySelectorAll('.section');
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                  observer.unobserve(entry.target); // رسم مرة واحدة فقط
+              }
+          });
+      }, {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+      });
+
+      elements.forEach(element => observer.observe(element));
+  }
+
+  // معالجة قائمة الهاتف المحمول إذا وجدت
+  function initializeMobileMenu() {
+      const menuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.querySelector('.mobile-menu');
+
+      if (menuButton && mobileMenu) {
+          menuButton.addEventListener('click', () => {
+              const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+              menuButton.setAttribute('aria-expanded', !isExpanded);
+              mobileMenu.classList.toggle('active');
+          });
+      }
+  }
+
+  // إضافة مراقب التغيير في الحجم للرسومات الارتفاعية
+  function initializeHeightAnimations() {
+      const resizeObserver = new ResizeObserver(entries => {
+          entries.forEach(entry => {
+              const element = entry.target;
+              if (element.classList.contains('education-details')) {
+                  element.style.maxHeight = element.style.display === 'block'
+                      ? `${element.scrollHeight}px`
+                      : '0px';
+              }
+          });
+      });
+
+      document.querySelectorAll('.education-details').forEach(detail => {
+          resizeObserver.observe(detail);
+      });
+  }
+
+  // تهيئة كل شيء عند تحميل الوثيقة
+  document.addEventListener('DOMContentLoaded', () => {
+      initializeTheme();
+      handleSystemThemeChange();
+      initializeSmoothScroll();
+      initializeScrollAnimations();
+      initializeMobileMenu();
+      initializeHeightAnimations();
+      handleArticleAnimation();
+  });
+
+  // معالجة أحداث التمرير بكفاءة
+  let scrollTimeout;
+  window.addEventListener('scroll', () => {
+      if (!scrollTimeout) {
+          scrollTimeout = setTimeout(() => {
+              scrollTimeout = null;
+              handleArticleAnimation();
+          }, 20);
+      }
+  });
+
+  // معالجة تغييرات ظهور الصفحة
+  document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') {
+          // إعادة تهيئة الرسومات للعناصر المرئية
+          handleArticleAnimation();
+      }
+  });
+
+  // تصدير الوظائف لاستخدامها كوحدات محتملة
+  if (typeof module !== 'undefined' && module.exports) {
+      module.exports = {
+          toggleDetails,
+          handleArticleAnimation,
+          initializeTheme,
+          handleSystemThemeChange,
+          initializeSmoothScroll,
+          initializeScrollAnimations,
+          initializeMobileMenu,
+          initializeHeightAnimations
+      };
+  }
+</script>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+ <!-- بداية قسم الشهادات -->
+<div id="testimonials" class="testimonials-section section" tabindex="-1" ref="testimonialsSection">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">الشهادات</span>
+      <h2 class="title">
+        ماذا يقول الناس
+        <br>
+        عن عملي؟
+      </h2>
+    </div>
+    <div class="section-content">
+      <ul class="testimonials-items" v-staggerdelay="500">
+        <li class="has-ultimate-tooltip"
+            tabindex="0"
+            v-for="item in testimonialsItems"
+            :key="item.quoteAuthor.ar">
+          <div class="testimonials-item">
+            <div class="testimonial-author-img">
+              <img :src="item.imgUrl || 'assets/images/testimonials/anonymous-user.png'" :alt="item.quoteAuthor.ar">
+            </div>
+            <div class="ultimate-tooltip">
+              <p>{{ item.quoteContent.ar }}</p>
+              <h4 class="ultimate-tooltip-title">{{ item.quoteAuthor.ar }}</h4>
+              <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.ar }}</h5>
+            </div>
+            <div class="ultimate-tooltip-arrow"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- نهاية قسم الشهادات -->
+
+<!-- بداية قسم الاتصال -->
+<div id="contact" class="contact-section section" tabindex="-1">
+  <div class="container">
+    <div class="section-content row">
+      <!-- نص الاتصال -->
+      <div class="contact-text col-lg-6">
+        <div class="text-box-inline">
+          <span class="subtitle">الاتصال</span>
+          <h2>
+            هل لديك مشروع؟
+            <br>
+            يرجى إرسال رسالة
+          </h2>
+          <p>
+            تواصل معي وأخبرني كيف يمكنني مساعدتك. أملأ النموذج وسأتواصل معك في أقرب وقت ممكن.
+          </p>
+        </div>
+
+        <!-- معلومات الاتصال -->
+        <ul class="contact-info">
+          <li>
+            <img src="assets/images/icons/address.png" alt="العنوان">
+            <div>
+              <strong>العنوان:</strong>
+              المغرب
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/icons/phone.png" alt="الهاتف">
+            <div>
+              <strong>الهاتف:</strong>
+              <ul>
+                <li><a href="tel:+212655798315" class="ltr-dir">(+212) 655 798 315</a></li>
               </ul>
             </div>
-          </div>
-        </div>
-        <!-- نهاية قسم الشهادات -->
-
-        <!-- بداية قسم الاتصال -->
-        <div id="contact" class="contact-section section" tabindex="-1">
-          <div class="container">
-            <div class="section-content row">
-
-              <!-- مربع النص -->
-              <div class="contact-text col-lg-6">
-                <div class="text-box-inline">
-                  <span class="subtitle">الاتصال</span>
-                  <h2>
-                    هل لديك مشروع؟
-                    <br>
-                    يرجى إرسال رسالة
-                  </h2>
-                  <p>
-                    ابقى على تواصل ودعني أعرف كيف يمكنني مساعدتك. املأ النموذج وسأكون على اتصال في أقرب وقت ممكن.
-                  </p>
-                </div>
-
-                <!-- معلومات الاتصال -->
-                <ul class="contact-info">
-                  <li>
-                    <img src="assets/images/icons/address.png" alt="العنوان">
-                    <div>
-                      <strong>العنوان:</strong>
-                      المغرب
-                    </div>
-                  </li>
-                  <li>
-                    <img src="assets/images/icons/phone.png" alt="الهاتف">
-                    <div>
-                      <strong>الهاتف:</strong>
-                      <ul>
-                        <li><a href="tel:212655798315" class="ltr-dir">(+212) 655 798 315</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="assets/images/icons/email.png" alt="البريد الإلكتروني">
-                    <div>
-                      <strong>البريد الإلكتروني:</strong>
-                      <ul>
-                        <li><a href="mailto:abdellahennajari2018@gmail.com">abdellahennajari2018@gmail.com</a></li>
-                        <li><a href="mailto:abdellah.ennajari.23@ump.ac.ma">abdellah.ennajari.23@ump.ac.ma</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-
-                <!-- روابط التواصل الاجتماعي -->
-                <ul class="social">
-                  <li>
-                    <a href="https://www.instagram.com/abdellah.ennajari/" target="_blank" rel="noreferrer" v-tooltip="{text: 'فيسبوك', dir: 'top'}">
-                      <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'تويتر', dir: 'top'}">
-                      <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="www.linkedin.com/in/ennajari-abdellah" target="_blank" rel="noreferrer" v-tooltip="{text: 'لينكد إن', dir: 'top'}">
-                      <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'يوتيوب', dir: 'top'}">
-                      <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- نموذج الاتصال -->
-              <div class="col-lg-6">
-                <form ref="contactForm"
-                  class="contact-form form-styled"
-                  action="contact_form.php"
-                  data-success-msg="تم إرسال الرسالة بنجاح!"
-                  data-err-msg="عفوا! حدث خطأ ما، يرجى المحاولة مرة أخرى.">
-                  <div class="group">
-                    <label>الاسم</label>
-                    <div class="control has-prefix-icon">
-                      <input type="text"
-                        name="name"
-                        placeholder="مثال. جون دو"
-                        minlength="3"
-                        required>
-                      <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
-
-                      <!-- رسائل أخطاء التحقق -->
-                      <div class="errors-msgs">
-                        <input class="required" type="hidden" value="الاسم مطلوب">
-                        <input class="minLength" type="hidden" value="يجب أن يكون الاسم 3 أحرف على الأقل">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="group">
-                    <label>البريد الإلكتروني</label>
-                    <div class="control has-prefix-icon">
-                      <input class="ltr-dir"
-                        type="email"
-                        inputmode="email"
-                        name="email"
-                        placeholder="مثال. john.doe@gmail.com"
-                        required>
-                      <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
-
-                      <!-- رسائل أخطاء التحقق -->
-                      <div class="errors-msgs">
-                        <input class="required" type="hidden" value="البريد الإلكتروني مطلوب">
-                        <input class="invalid" type="hidden" value="يرجى إدخال عنوان بريد إلكتروني صالح">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="group phone-number">
-                    <label>الهاتف <span class="optional">(اختياري)</span></label>
-                    <div class="control has-prefix-icon">
-                      <input type="tel"
-                        inputmode="tel"
-                        name="phone"
-                        placeholder="رقم الهاتف">
-                      <i class="fa fa-phone prefix-icon" aria-hidden="true"></i>
-
-                      <!-- رسائل أخطاء التحقق -->
-                      <div class="errors-msgs">
-                        <input class="invalid" type="hidden" value="يرجى إدخال رقم هاتف صالح">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="group">
-                    <label>الرسالة</label>
-                    <div class="control has-prefix-icon">
-                      <textarea name="message" placeholder="اكتب الرسالة..." required></textarea>
-                      <i class="fa fa-comments prefix-icon" aria-hidden="true"></i>
-
-                      <!-- رسائل أخطاء التحقق -->
-                      <div class="errors-msgs">
-                        <input class="required" type="hidden" value="الرسالة مطلوبة">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="group">
-                    <div class="control">
-                      <button class="submit-btn btn btn-dark" type="button" @click="contactFormValidation">إرسال</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
+          </li>
+          <li>
+            <img src="assets/images/icons/email.png" alt="البريد الإلكتروني">
+            <div>
+              <strong>البريد الإلكتروني:</strong>
+              <ul>
+                <li><a href="mailto:abdellahennajari2018@gmail.com">abdellahennajari2018@gmail.com</a></li>
+                <li><a href="mailto:abdellah.ennajari.23@ump.ac.ma">abdellah.ennajari.23@ump.ac.ma</a></li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <!-- نهاية قسم الاتصال -->
-
-        <!-- بداية التذييل -->
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <!-- الشعار -->
-                <div class="logo" title="النجاري">
-                  <h1><a href="index.html">النجاري</a></h1>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                &copy; {{ copyrightDate }} جميع الحقوق محفوظة.
-                <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noopener"></a>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <!-- نهاية التذييل -->
-
-        <!-- زر تمرير لأعلى -->
-        <button class="scroll-to-top" ref="scrollTopBtn"
-          title="العودة لأعلى"
-          data-show-at="50"
-          @click="scrollToTop">
-          <svg width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-          </svg>
-        </button>
-
-        <!-- إخطارات بار الإعلام -->
-        <ul class="notifications-container hide-in-preloading">
-          <transition-group name="notify">
-            <li v-for="notify of notifications"
-              :key="notify.id"
-              :id="notify.id"
-              :class="['notification', 'show', notify.className, notify.time && 'timer']"
-            >
-              {{ notify.msg }}
-              <i class="fa fa-times link-hover" aria-hidden="true" @click="dismissNotify(notify.id)"></i>
-              <span v-if="notify.time"
-                class="disappearing-time"
-                :style="{ 'animation-duration': notify.time + 'ms' }"></span>
-            </li>
-          </transition-group>
+          </li>
         </ul>
 
-        <!-- تحميل Ajax -->
-        <div class="ajax-loading hide-in-preloading" v-show="isAjaxLoading">
-          <span></span>
-        </div>
+        <!-- روابط التواصل الاجتماعي -->
+        <ul class="social">
+          <li>
+            <a href="https://www.instagram.com/abdellah.ennajari/" target="_blank" rel="noreferrer" v-tooltip="{text: 'إنستغرام', dir: 'top'}">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'تويتر', dir: 'top'}">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ennajari-abdellah" target="_blank" rel="noreferrer" v-tooltip="{text: 'LinkedIn', dir: 'top'}">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ennajari" target="_blank" rel="noreferrer" v-tooltip="{text: 'GitHub', dir: 'top'}">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- نموذج الاتصال -->
+      <div class="col-lg-6">
+        <form ref="contactForm"
+              class="contact-form form-styled"
+              action="https://formspree.io/f/mdkkqlyy"
+              method="POST"
+              data-success-msg="تم إرسال الرسالة بنجاح!"
+              data-err-msg="عذراً! حدث خطأ ما، يرجى المحاولة مرة أخرى.">
+          <div class="group">
+            <label>الاسم</label>
+            <div class="control has-prefix-icon">
+              <input type="text"
+                     name="name"
+                     placeholder="مثال: أحمد محمد"
+                     minlength="3"
+                     required>
+              <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
+
+              <!-- رسائل أخطاء التحقق من الصحة -->
+              <div class="errors-msgs">
+                <input class="required" type="hidden" value="الاسم مطلوب">
+                <input class="minLength" type="hidden" value="يجب أن يكون الاسم على الأقل 3 أحرف">
+              </div>
+            </div>
+          </div>
+          <div class="group">
+            <label>البريد الإلكتروني</label>
+            <div class="control has-prefix-icon">
+              <input class="ltr-dir"
+                     type="email"
+                     inputmode="email"
+                     name="email"
+                     placeholder="مثال: john.doe@gmail.com"
+                     required>
+              <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
+
+              <!-- رسائل أخطاء التحقق من الصحة -->
+              <div class="errors-msgs">
+                <input class="required" type="hidden" value="البريد الإلكتروني مطلوب">
+                <input class="invalid" type="hidden" value="يرجى إدخال عنوان بريد إلكتروني صالح">
+              </div>
+            </div>
+          </div>
+          <div class="group phone-number">
+            <label>الهاتف <span class="optional">(اختياري)</span></label>
+            <div class="control has-prefix-icon">
+              <input type="tel"
+                     inputmode="tel"
+                     name="phone"
+                     placeholder="رقم الهاتف">
+              <i class="fa fa-phone prefix-icon" aria-hidden="true"></i>
+
+              <!-- رسائل أخطاء التحقق من الصحة -->
+              <div class="errors-msgs">
+                <input class="invalid" type="hidden" value="يرجى إدخال رقم هاتف صالح">
+              </div>
+            </div>
+          </div>
+          <div class="group">
+            <label>الرسالة</label>
+            <div class="control has-prefix-icon">
+              <textarea name="message" placeholder="اكتب رسالة..." required></textarea>
+              <i class="fa fa-comments prefix-icon" aria-hidden="true"></i>
+
+              <!-- رسائل أخطاء التحقق من الصحة -->
+              <div class="errors-msgs">
+                <input class="required" type="hidden" value="الرسالة مطلوبة">
+              </div>
+            </div>
+          </div>
+          <div class="group">
+            <div class="control">
+              <button class="submit-btn btn btn-dark" type="submit">إرسال</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- ملف البرامج النصية -->
-    <script src="scripts/plugins.min.js"></script>
+<!-- بداية التذييل -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- الشعار -->
+        <div class="logo" title="النجاري">
+          <h1><a href="index.html">النجاري</a></h1>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        &copy; 2024 جميع الحقوق محفوظة.
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- نهاية التذييل -->
 
-    <!-- الملف الرئيسي للبرنامج النصي -->
-    <script src="scripts/main.min.js"></script>
+<!-- زر التمرير لأعلى الصفحة -->
+<button class="scroll-to-top" ref="scrollTopBtn"
+  title="العودة إلى أعلى"
+  data-show-at="50"
+  @click="scrollToTop">
+  <svg width="100%" height="100%" viewBox="-1 -1 102 102">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+  </svg>
+</button>
+
+<!-- إشعارات التنبيه -->
+<ul class="notifications-container hide-in-preloading">
+  <transition-group name="notify">
+    <li v-for="notify of notifications"
+      :key="notify.id"
+      :id="notify.id"
+      :class="['notification', 'show', notify.className, notify.time && 'timer']"
+    >
+      {{ notify.msg }}
+      <i class="fa fa-times link-hover" aria-hidden="true" @click="dismissNotify(notify.id)"></i>
+      <span v-if="notify.time"
+        class="disappearing-time"
+        :style="{ 'animation-duration': notify.time + 'ms' }"></span>
+    </li>
+  </transition-group>
+</ul>
+
+<!-- تحميل Ajax -->
+<div class="ajax-loading hide-in-preloading" v-show="isAjaxLoading">
+  <span></span>
+</div>
+
+<!-- ملفات النصوص البرمجية -->
+<script src="scripts/plugins.min.js"></script>
+
+<!-- الملف الرئيسي للنصوص البرمجية -->
+<script src="scripts/main.min.js"></script>
+      </div>
+    </div>
   </body>
 </html>
