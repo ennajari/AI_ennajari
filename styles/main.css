@@ -2453,7 +2453,7 @@ footer {
   padding-bottom: 20px;
   -webkit-box-shadow: var(--card-shadow);
   box-shadow: var(--card-shadow);
-  width: 90%; /* Set footer width to 90% */
+  width: 100%; /* Set footer width to 90% */
   margin: 0 auto; /* Center the footer */
 }
 
