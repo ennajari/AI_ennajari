@@ -3086,7 +3086,7 @@ html[dir=rtl] .notifications-container .notify-leave-active {
     position: relative;
     z-index: 2;
     height: calc(100vh - 70px);
-    max-width: 100%;
+    /* max-width: 100%; */
     margin: auto;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -4333,3 +4333,5 @@ html[dir=rtl] .portfolio-page .portfolio-items .work-tools li:not(:last-of-type)
 .not-found-page .not-found-content .not-found-text {
   margin-bottom: 30px;
 }
+/* ///////////////////////////////////////////////////////////// */
+
