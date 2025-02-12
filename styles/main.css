@@ -3465,7 +3465,7 @@ html[dir=rtl] .statistics-section .section-content .statistics-items a > .fa {
   bottom: 0;
   height: 80%;
   width: 80%;
-  background: linear-gradient(150deg, hsl(var(--main-color-one)) 0%, hsl(var(--main-color-two)) 100%);
+  /* background: linear-gradient(150deg, hsl(var(--main-color-one)) 0%, hsl(var(--main-color-two)) 100%); */
   -webkit-mask-image: url("../assets/images/blob-shape.png");
           mask-image: url("../assets/images/blob-shape.png");
   -webkit-mask-repeat: no-repeat;
@@ -3562,7 +3562,7 @@ html[dir=rtl] .about-section .section-content .about-img .layer:first-of-type:be
   -webkit-box-shadow: var(--card-shadow);
           box-shadow: var(--card-shadow);
   cursor: help;
-  visibility: hidden;
+  visibility: visible;
 }
 .skills-section .section-content .skills-items li .skill-icon img {
   display: block;
@@ -3575,6 +3575,47 @@ html[dir=rtl] .about-section .section-content .about-img .layer:first-of-type:be
 .enable-focus-style .skills-section .section-content .skills-items li:focus {
   -webkit-box-shadow: 0 0 0 3px hsla(var(--main-color-two), 70%);
           box-shadow: 0 0 0 3px hsla(var(--main-color-two), 70%);
+}
+html[dir="ltr"] .skills-section .section-content .skills-items li {
+  -webkit-animation-name: fadeInUpLeftTranslate;
+          animation-name: fadeInUpLeftTranslate;
+}
+
+html[dir="rtl"] .skills-section .section-content .skills-items li {
+  -webkit-animation-name: fadeInUpRightTranslate;
+          animation-name: fadeInUpRightTranslate;
+}
+
+.light_theme .skills-section .section-content .skills-items li {
+  background-color: #fff;
+  -webkit-box-shadow: 11px 10px 38px rgba(0, 0, 0, 0.12);
+          box-shadow: 11px 10px 38px rgba(0, 0, 0, 0.12);
+}
+
+.dark_theme .skills-section .section-content .skills-items li {
+  background-color: #313131;
+  -webkit-box-shadow: 11px 10px 38px rgba(0, 0, 0, 0.38);
+          box-shadow: 11px 10px 38px rgba(0, 0, 0, 0.38);
+}
+
+.skills-section .section-content .skills-items li .skill-icon img {
+  display: block;
+  width: 48px;
+  margin: auto;
+}
+
+.skills-section .section-content .skills-items li:focus {
+  outline: none;
+}
+
+.light_theme.enable-focus-style .skills-section .section-content .skills-items li:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(235, 53, 5, 0.7);
+          box-shadow: 0 0 0 3px rgba(235, 53, 5, 0.7);
+}
+
+.dark_theme.enable-focus-style .skills-section .section-content .skills-items li:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(235, 53, 5, 0.7);
+          box-shadow: 0 0 0 3px rgba(235, 53, 5, 0.7);
 }
 
 /* 5. Experience Section Styles */
