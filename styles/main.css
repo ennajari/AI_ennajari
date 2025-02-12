@@ -3495,7 +3495,7 @@ html[dir=rtl] .about-section .section-content .about-img .layer:first-of-type:be
           filter: drop-shadow(2px 4px 6px black);
 }
 .about-section .section-content .about-img .layer:last-of-type {
-  height: 50%;
+  /* height: 100%; */
   overflow: hidden;
 }
 .about-section .section-content .about-img .layer:last-of-type img {
