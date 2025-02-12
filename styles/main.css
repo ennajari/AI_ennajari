@@ -1287,7 +1287,7 @@ html[dir=rtl] .toggle-switch-btn input:nth-of-type(3):checked ~ .switcher-toggle
   padding: 0.8rem 1rem;
   border-radius: 0.63rem;
   visibility: hidden;
-  opacity: 0;//
+  opacity: 0;
   pointer-events: none;
   -webkit-filter: var(--drop-shadow);
           filter: var(--drop-shadow);
