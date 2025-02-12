@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abdellah Ennajari - Portfolio showcasing AI and Data Science projects, skills, and experiences.">
-    <meta name="keywords" content="portfolio, agency, business, clean, company, corporate, creative, gallery, rtl, modern, photography, vue, vuejs, responsive, sass">
+    <meta name="description" content="Abdellah Ennajari - Portfolio présentant des projets, compétences et expériences en IA et Science des Données.">
+    <meta name="keywords" content="portfolio, agence, entreprise, propre, société, corporate, créatif, galerie, rtl, moderne, photographie, vue, vuejs, responsive, sass">
 
-    <!-- title of the browser tab -->
-    <title>عبد الله النجاري</title>
+    <!-- titre de l'onglet du navigateur -->
+    <title>Abdellah Ennajari</title>
 
     <!-- favicon -->
     <link rel="icon" href="assets//images/favicon.ico">
 
-    <!-- fonts -->
+    <!-- polices -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap">
 
-    <!-- css libraries file -->
+    <!-- fichier des bibliothèques CSS -->
     <link rel="stylesheet" href="styles/libraries.min.css">
 
-    <!-- bootstrap css file -->
+    <!-- fichier CSS de Bootstrap -->
     <link rel="stylesheet" href="styles/bootstrap.css">
 
-    <!-- main style file -->
+    <!-- fichier de style principal -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
@@ -37,20 +37,20 @@
         <div class="circle-cursor circle-cursor-outer" ref="circleCursorOuter"></div>
         <div class="circle-cursor circle-cursor-inner" ref="circleCursorInner"></div>
 
-        <!-- start preloader-->
+        <!-- début du préchargeur -->
         <div class="preloader" ref="preloader">
           <div class="preloader-content">
             <div class="logo">
-              <img src="assets/images/favicon.gif" alt="Your Logo">
+              <img src="assets/images/favicon.gif" alt="Votre Logo">
             </div>
             <div class="loading-bar">
               <span class="loading-bar-progress"></span>
             </div>
           </div>
         </div>
-        <!-- end preloader-->
+        <!-- fin du préchargeur -->
 
-        <!-- start of header -->
+        <!-- début de l'en-tête -->
 <header class="hide-in-preloading" :class="{
   'big-header': isHeaderBig,
   'small-header': !isHeaderBig,
@@ -58,54 +58,54 @@
 }">
   <div class="container">
     <!-- logo -->
-    <div class="logo" title="عبد الله النجاري">
-      <h1><a href="rtl-index.html">عبد الله النجاري</a></h1>
+    <div class="logo" title="Abdellah Ennajari">
+      <h1><a href="rtl-index.html">Abdellah Ennajari</a></h1>
     </div>
 
-    <!-- nav links -->
+    <!-- liens de navigation -->
     <nav :class="{'menu-open': isNavMenuOpen}" ref="headerNav">
 
-      <!-- nav menu links -->
+      <!-- liens du menu de navigation -->
       <ul class="nav-links">
         <li v-for="link in navLinks" :key="link.url">
           <a :href="link.url" @click="closeNavMenu">
-            {{ link.title.ar }}
+            {{ link.title.fr }}
           </a>
         </li>
       </ul>
 
-      <!-- menu content in big devices (hidden in mobile/tablet) -->
+      <!-- contenu du menu pour les grands écrans (caché sur mobile/tablette) -->
       <div class="desktop-menu-content" tabindex="-1">
         <div class="container">
 
-          <!-- about us -->
+          <!-- à propos de nous -->
           <div class="about-us">
             <p>
-              طالب مهندس في الذكاء الاصطناعي بخبرة في التعلم العميق ومعالجة الصور، أبحث عن تدريب مدته 3 أشهر في فرنسا في مجال الذكاء الاصطناعي. مهتم بالابتكار التكنولوجي، أود تطبيق مهاراتي في التعلم الآلي والتعلم العميق ضمن فريق ديناميكي.
+              Étudiant ingénieur en intelligence artificielle avec une expérience en apprentissage profond et traitement d'images, je recherche un stage de 3 mois en France dans le domaine de l'IA. Passionné par l'innovation technologique, je souhaite appliquer mes compétences en apprentissage automatique et apprentissage profond au sein d'une équipe dynamique.
             </p>
             <h4 class="block-title">
-              بفضل تكوين قوي في الرياضيات وعلوم الحاسوب، أنا متخصص في تطوير تطبيقات مبتكرة والتعاون في مشاريع تكنولوجية متقدمة لدفع حدود الذكاء الاصطناعي.
+              Grâce à une formation solide en mathématiques et en informatique, je suis spécialisé dans le développement d'applications innovantes et la collaboration sur des projets technologiques avancés pour repousser les limites de l'intelligence artificielle.
             </h4>
           </div>
 
-          <!-- contact info -->
+          <!-- informations de contact -->
           <ul class="contact-info row">
             <li class="col-lg-4">
-              <h4 class="block-title">البريد الإلكتروني</h4>
+              <h4 class="block-title">Email</h4>
               <ul>
                 <li><a href="mailto:abdellah.ennajari.23@ump.ac.ma">abdellah.ennajari.23@ump.ac.ma</a></li>
               </ul>
             </li>
             <li class="col-lg-4">
-              <h4 class="block-title">العنوان</h4>
+              <h4 class="block-title">Adresse</h4>
               <ul>
                 <li>
-                   المغرب
+                   Maroc
                 </li>
               </ul>
             </li>
             <li class="col-lg-4">
-              <h4 class="block-title">الهاتف</h4>
+              <h4 class="block-title">Téléphone</h4>
               <ul>
                 <li><a href="tel:+212655798315">+212 6 5579-8315</a></li>
               </ul>
@@ -114,37 +114,37 @@
         </div>
       </div>
     </nav>
-<!-- options icons -->
+<!-- icônes des options -->
 <ul class="options-icons">
 
-  <!-- lang switcher button -->
+  <!-- bouton de changement de langue -->
   <li class="lang-switcher">
     <ul class="lang-switcher-menu">
       <li class="menu-item menu-item-has-children">
-        <a href="#">ع</a>
+        <a href="#">Fr 🇫🇷</a>
 
         <ul class="sub-menu">
           <li class="menu-item">
-            <a href="rtl-index.html">ع</a>
+            <a href="rtl-index.html">Fr 🇫🇷</a>
           </li>
           <li class="menu-item">
-            <a href="index.html">En</a>
+            <a href="index.html">En 🇬🇧</a>
           </li>
         </ul>
       </li>
     </ul>
   </li>
 
-  <!-- theme switcher button -->
+  <!-- bouton de changement de thème -->
   <li class="theme-switcher">
-    <button :class="savedTheme" title="تبديل المظهر" @click="changeAppTheme"></button>
+    <button :class="savedTheme" title="Changer le thème" @click="changeAppTheme"></button>
   </li>
 
-  <!-- hamburger button -->
+  <!-- bouton hamburger -->
   <li class="hamburger-btn" :class="{'open': isNavMenuOpen}">
     <button @click="toggleNavMenu"
-      title="فتح/غلق القائمة الجانبية"
-      aria-label="فتح/غلق القائمة الجانبية"
+      title="Ouvrir/Fermer le menu latéral"
+      aria-label="Ouvrir/Fermer le menu latéral"
       ref="navMenuToggleBtn">
       <span></span>
       <span></span>
@@ -154,67 +154,67 @@
 </ul>
 </div>
 </header>
-<!-- end of header -->
+<!-- fin de l'en-tête -->
 
-<!-- start of archive page -->
+<!-- début de la page d'archive -->
 <div class="archive-page portfolio-section section page">
   <div class="container">
     <div class="section-title">
       <span class="subtitle">{{ portfolioArchiveName }}</span>
       <h2 class="title">
-        أحدث المشاريع المضافة
+        Derniers projets ajoutés
         <br>
-        في تصنيف {{ portfolioArchiveName }}
+        dans la catégorie {{ portfolioArchiveName }}
       </h2>
     </div>
 
     <div class="section-content">
-      <!-- portfolio items -->
-      <ul class="portfolio-items has-works" ref="portfolioItems" data-no-works-msg="لا يوجد أعمال">
+      <!-- éléments du portfolio -->
+      <ul class="portfolio-items has-works" ref="portfolioItems" data-no-works-msg="Aucun travail disponible">
         <li class="portfolio-item"
           v-for="work in filteredPortfolioItems"
-          :key="work.title.ar">
+          :key="work.title.fr">
           <a :href="'rtl-' + work.url" target="_blank" rel="noopener">
             <div class="item-img">
-              <img :src="work.imgUrl" :alt="work.title.ar">
+              <img :src="work.imgUrl" :alt="work.title.fr">
             </div>
             <div class="item-details">
-              <h3 class="title">{{ work.title.ar }}</h3>
-              <div class="date">{{ work.date.ar }}</div>
+              <h3 class="title">{{ work.title.fr }}</h3>
+              <div class="date">{{ work.date.fr }}</div>
             </div>
           </a>
         </li>
         <li>
-          <button class="more" @click="getPortfolioItems">تحميل المزيد من الأعمال</button>
+          <button class="more" @click="getPortfolioItems">Charger plus de travaux</button>
         </li>
       </ul>
     </div>
   </div>
 </div>
-<!-- end of archive page -->
+<!-- fin de la page d'archive -->
 
-<!-- start of footer -->
+<!-- début du pied de page -->
 <footer>
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
         <!-- logo -->
-        <div class="logo" title="عبد الله النجاري">
-          <h1><a href="rtl-index.html">عبد الله النجاري</a></h1>
+        <div class="logo" title="Abdellah Ennajari">
+          <h1><a href="rtl-index.html">Abdellah Ennajari</a></h1>
         </div>
       </div>
       <div class="col-lg-6">
-        &copy; {{ copyrightDate }} مدعوم بكل فخر من
-        <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noopener">ويبروك</a>
+        &copy; {{ copyrightDate }} Fièrement propulsé par
+        <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noopener">Webrouk</a>
       </div>
     </div>
   </div>
 </footer>
-<!-- end of footer -->
+<!-- fin du pied de page -->
 
-<!-- scroll to top button -->
+<!-- bouton de retour en haut -->
 <button class="scroll-to-top" ref="scrollTopBtn"
-  title="العودة إلى الأعلى"
+  title="Retour en haut"
   data-show-at="50"
   @click="scrollToTop">
   <svg width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -222,7 +222,7 @@
   </svg>
 </button>
 
-<!-- toast notifications -->
+<!-- notifications toast -->
 <ul class="notifications-container hide-in-preloading">
   <transition-group name="notify">
     <li v-for="notify of notifications"
@@ -239,17 +239,17 @@
   </transition-group>
 </ul>
 
-<!-- ajax loading -->
+<!-- chargement AJAX -->
 <div class="ajax-loading hide-in-preloading" v-show="isAjaxLoading">
   <span></span>
 </div>
 </div>
 </div>
 
-<!-- js plugins file -->
+<!-- fichier des plugins JS -->
 <script src="scripts/plugins.min.js"></script>
 
-<!-- main script file -->
+<!-- fichier de script principal -->
 <script src="scripts/main.min.js"></script>
 </body>
 </html>

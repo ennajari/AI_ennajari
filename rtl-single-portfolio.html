@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="عبد الله النجاري - ملف شخصي يعرض مشاريع الذكاء الاصطناعي وعلم البيانات والمهارات والخبرات.">
-    <meta name="keywords" content="ملف شخصي, وكالة, أعمال, نظيف, شركة, مؤسسي, إبداعي, معرض, rtl, حديث, تصوير, vue, vuejs, تفاعلي, sass">
+    <meta name="description" content="Abdellah Ennajari - Portfolio présentant des projets en intelligence artificielle, science des données, compétences et expériences.">
+    <meta name="keywords" content="portfolio, agence, travaux, propre, entreprise, corporatif, créatif, galerie, rtl, moderne, photographie, vue, vuejs, réactif, sass">
 
-    <!-- عنوان علامة تبويب المتصفح -->
-    <title>عبد الله النجاري - ملف شخصي</title>
+    <!-- Titre de l'onglet du navigateur -->
+    <title>Abdellah Ennajari - Portfolio</title>
 
-    <!-- أيقونة الموقع -->
+    <!-- Favicon du site -->
     <link rel="icon" href="assets//images/favicon.ico">
 
-    <!-- الخطوط -->
+    <!-- Polices -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap">
 
-    <!-- ملفات مكتبات css -->
+    <!-- Fichiers de styles des bibliothèques CSS -->
     <link rel="stylesheet" href="styles/libraries.min.css">
 
-    <!-- ملف css لـ bootstrap -->
+    <!-- Fichier CSS pour Bootstrap -->
     <link rel="stylesheet" href="styles/bootstrap.css">
 
-    <!-- الملف الرئيسي للأنماط -->
+    <!-- Fichier principal de styles -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
@@ -37,81 +37,81 @@
         <div class="circle-cursor circle-cursor-outer" ref="circleCursorOuter"></div>
         <div class="circle-cursor circle-cursor-inner" ref="circleCursorInner"></div>
 
-        <!-- بداية الشاشة الأولية -->
+        <!-- Début de l'écran de préchargement -->
         <div class="preloader" ref="preloader">
           <div class="preloader-content">
             <div class="logo">
-              <img src="assets/images/favicon.gif" alt="Your Logo">
+              <img src="assets/images/favicon.gif" alt="Votre Logo">
             </div>
             <div class="loading-bar">
               <span class="loading-bar-progress"></span>
             </div>
           </div>
         </div>
-        <!-- نهاية الشاشة الأولية -->
+        <!-- Fin de l'écran de préchargement -->
 
-        <!-- بداية الرأس -->
+        <!-- Début de l'en-tête -->
         <header class="hide-in-preloading" :class="{
           'big-header': isHeaderBig,
           'small-header': !isHeaderBig,
           'header-hidden': isHeaderHidden
         }">
           <div class="container">
-            <!-- الشعار -->
-            <div class="logo" title="عبد الله النجاري">
-              <h1><a href="rtl-index.html">عبد الله النجاري</a></h1>
+            <!-- Logo -->
+            <div class="logo" title="Abdellah Ennajari">
+              <h1><a href="rtl-index.html">Abdellah Ennajari</a></h1>
             </div>
 
-            <!-- روابط التنقل -->
+            <!-- Liens de navigation -->
             <nav :class="{'menu-open': isNavMenuOpen}" ref="headerNav">
 
-              <!-- روابط قائمة التنقل -->
+              <!-- Liens de la barre de navigation -->
               <ul class="nav-links">
                 <li v-for="link in navLinks" :key="link.url">
                   <a :href="link.url" @click="closeNavMenu">
-                    {{ link.title.ar }}
+                    {{ link.title.fr }}
                   </a>
                 </li>
               </ul>
 
-              <!-- محتوى القائمة في الأجهزة الكبيرة (مخفي في الهاتف واللوحي) -->
+              <!-- Contenu du menu sur les grands appareils (caché sur mobile/tablette) -->
               <div class="desktop-menu-content" tabindex="-1">
                 <div class="container">
 
-                  <!-- قسم نبذة عني -->
+                  <!-- Section À propos -->
                   <div class="about-us">
                     <p>
-                      أنا مهتم بالذكاء الاصطناعي والتكنولوجيا، ودائما أسعى لإنشاء حلول مبتكرة وذات تأثير.
+                      Je suis passionné par l'intelligence artificielle et la technologie, et je m'efforce toujours de créer des solutions innovantes et impactantes.
                     </p>
                     <h4 class="block-title">
-                      بفضل الأساس القوي في الذكاء الاصطناعي وعلم الحاسوب والرياضيات، أنا متخصص في تطوير تطبيقات مبتكرة والتعاون في مشاريع مبتكرة لدفع حدود التكنولوجيا.
+                      Grâce à une base solide en intelligence artificielle, en informatique et en mathématiques, je suis spécialisé dans le développement d'applications innovantes et la collaboration sur des projets innovants pour repousser les limites de la technologie.
                     </h4>
                   </div>
 
-                  <!-- قسم معلومات الاتصال -->
+                  <!-- Section Informations de contact -->
                   <ul class="contact-info row">
-                    <!-- معلومات البريد الإلكتروني -->
+                    <!-- Informations de l'email -->
                     <li class="col-lg-4">
-                      <h4 class="block-title">البريد الإلكتروني</h4>
+                      <h4 class="block-title">Email</h4>
                       <ul>
                         <li><a href="mailto:abdellahennajari2018@gmail.com">abdellahennajari2018@gmail.com</a></li>
                         <li><a href="mailto:abdellah.ennajari.23@ump.ac.ma">abdellah.ennajari.23@ump.ac.ma</a></li>
                       </ul>
                     </li>
 
-                    <!-- معلومات العنوان -->
+                    <!-- Informations de l'adresse -->
                     <li class="col-lg-4">
-                      <h4 class="block-title">العنوان</h4>
+                      <h4 class="block-title">Adresse</h4>
                       <ul>
                         <li>
-                          المغرب
+                          Maroc
                         </li>
                       </ul>
                     </li>
 
-                    <!-- معلومات الهاتف -->
+                    <!-- Informations du téléphone -->
                     <li class="col-lg-4">
-                      <h4 class="block-title">الهاتف</h4>
+                      <h4 class="block-title">Téléphone</h4>
                       <ul>
                         <li><a href="tel:+212655798315">+212 6 55 79 83 15</a></li>
                       </ul>
@@ -121,37 +121,37 @@
               </div>
             </nav>
 
-            <!-- أيقونات الخيارات -->
+            <!-- Icônes des options -->
             <ul class="options-icons">
 
-              <!-- زر مبدل اللغة -->
+              <!-- Bouton de changement de langue -->
               <li class="lang-switcher">
                 <ul class="lang-switcher-menu">
                   <li class="menu-item menu-item-has-children">
-                    <a href="#">ع</a>
+                    <a href="#">Fr 🇫🇷</a>
 
                     <ul class="sub-menu">
                       <li class="menu-item">
-                        <a href="rtl-index.html">ع</a>
+                        <a href="rtl-index.html">Fr 🇫🇷</a>
                       </li>
                       <li class="menu-item">
-                        <a href="index.html">En</a>
+                        <a href="index.html">En 🇬🇧</a>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </li>
 
-              <!-- زر مبدل السمة -->
+              <!-- Bouton de changement de thème -->
               <li class="theme-switcher">
-                <button :class="savedTheme" title="تغيير الوضع" @click="changeAppTheme"></button>
+                <button :class="savedTheme" title="Changer de thème" @click="changeAppTheme"></button>
               </li>
 
-              <!-- زر القائمة الجانبية -->
+              <!-- Bouton du menu hamburger -->
               <li class="hamburger-btn" :class="{'open': isNavMenuOpen}">
                 <button @click="toggleNavMenu"
-                  title="تبديل القائمة الجانبية"
-                  aria-label="تبديل القائمة الجانبية"
+                  title="Basculer le menu latéral"
+                  aria-label="Basculer le menu latéral"
                   ref="navMenuToggleBtn">
                   <span></span>
                   <span></span>
@@ -161,23 +161,23 @@
             </ul>
           </div>
         </header>
-        <!-- نهاية الرأس -->
+        <!-- Fin de l'en-tête -->
 
-        <!-- بداية صفحة الملف -->
+        <!-- Début de la page du portfolio -->
         <div class="portfolio-page portfolio-section section page">
           <div class="container">
             <div class="section-content">
 
-              <!-- عناصر الملف -->
+              <!-- Éléments du portfolio -->
               <ul class="portfolio-items has-works" ref="portfolioItems">
                 <li>
-                  <!-- مربع النص -->
+                  <!-- Boîte de texte -->
                   <div class="text-box-block">
                     <span class="subtitle">
                       <a :href="'rtl-archive-portfolio.html?tax=cat&cat=' + getSinglePortfolioItem.category">{{ getSinglePortfolioItem.category }}</a>
                     </span>
-                    <h2>{{ getSinglePortfolioItem.title.ar }}</h2>
-                    <p>{{ getSinglePortfolioItem.desc.ar }}</p>
+                    <h2>{{ getSinglePortfolioItem.title.fr }}</h2>
+                    <p>{{ getSinglePortfolioItem.desc.fr }}</p>
                     <ul class="work-tools">
                       <li v-for="tool in getSinglePortfolioItem.tools" :key="tool">
                         <a :href="'rtl-archive-portfolio.html?tax=tools&tools=' + tool">{{ tool }}</a>
@@ -186,20 +186,20 @@
                   </div>
                 </li>
 
-                <!-- بداية قائمة العناصر -->
+                <!-- Début de la liste des éléments -->
                 <li class="portfolio-item"
                   v-for="screenshot in getSinglePortfolioItem.screenshots"
-                  :key="screenshot.caption.ar">
-                <!-- href points to the fully sized image -->
+                  :key="screenshot.caption.fr">
+                  <!-- href pointe vers l'image en taille réelle -->
                   <a class="glightbox" target="_blank" rel="noopener" data-gallery="gallery1"
                     :href="screenshot.url"
-                    :data-glightbox="'title:' + screenshot.caption.ar">
+                    :data-glightbox="'title:' + screenshot.caption.fr">
                     <div class="item-img">
-                      <!-- thumbnails -->
-                      <img :src="screenshot.url" :alt="screenshot.caption.ar">
+                      <!-- vignettes -->
+                      <img :src="screenshot.url" :alt="screenshot.caption.fr">
                     </div>
                     <div class="item-details">
-                      <h3 class="title">{{ screenshot.caption.ar }}</h3>
+                      <h3 class="title">{{ screenshot.caption.fr }}</h3>
                     </div>
                   </a>
                 </li>
@@ -207,30 +207,30 @@
             </div>
           </div>
         </div>
-        <!-- نهاية صفحة الملف -->
+        <!-- Fin de la page du portfolio -->
 
-        <!-- بداية التذييل -->
+        <!-- Début du pied de page -->
         <footer>
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
-                <!-- الشعار -->
-                <div class="logo" title="عبد الله النجاري">
-                  <h1><a href="rtl-index.html">عبد الله النجاري</a></h1>
+                <!-- Logo -->
+                <div class="logo" title="Abdellah Ennajari">
+                  <h1><a href="rtl-index.html">Abdellah Ennajari</a></h1>
                 </div>
               </div>
               <div class="col-lg-6">
-                &copy; {{ copyrightDate }} مدعوم بكل فخر من
-                <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noopener">ويبروك</a>
+                &copy; {{ copyrightDate }} soutenu avec fierté par
+                <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noopener">Webrouk</a>
               </div>
             </div>
           </div>
         </footer>
-        <!-- نهاية التذييل -->
+        <!-- Fin du pied de page -->
 
-        <!-- زر التمرير لأعلى -->
+        <!-- Bouton de retour en haut -->
         <button class="scroll-to-top" ref="scrollTopBtn"
-          title="العودة لأعلى"
+          title="Retour en haut"
           data-show-at="50"
           @click="scrollToTop">
           <svg width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -238,7 +238,7 @@
           </svg>
         </button>
 
-        <!-- إشعارات التنبيه -->
+        <!-- Notifications toast -->
         <ul class="notifications-container hide-in-preloading">
           <transition-group name="notify">
             <li v-for="notify of notifications"
@@ -255,17 +255,17 @@
           </transition-group>
         </ul>
 
-        <!-- تحميل ajax -->
+        <!-- Chargement Ajax -->
         <div class="ajax-loading hide-in-preloading" v-show="isAjaxLoading">
           <span></span>
         </div>
       </div>
     </div>
 
-    <!-- ملف js للمكونات الإضافية -->
+    <!-- Fichier JavaScript des plugins -->
     <script src="scripts/plugins.min.js"></script>
 
-    <!-- الملف الرئيسي للنصوص -->
+    <!-- Fichier principal JavaScript -->
     <script src="scripts/main.min.js"></script>
   </body>
 </html>
