@@ -331,353 +331,185 @@
               <!-- Éléments des compétences -->
               <div class="skills-items col-lg-6">
 
-                <!-- Liste des compétences -->
-                <ul v-staggerdelay="50" v-show="skillsType === 'skills'">
-                  <li tabindex="0" v-tooltip="{text: 'Programmation Python', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/python-icon.png" alt="Python">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Ingénierie de l\'apprentissage automatique', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/ml-icon.png" alt="Apprentissage automatique">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Apprentissage profond', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/deep-learning-icon.png" alt="Apprentissage profond">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Ingénierie web', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/web-dev-icon.png" alt="Ingénierie web">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Analyse de données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/data-analysis-icon.png" alt="Analyse de données">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Traitement du langage naturel', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/nlp.png" alt="Traitement du langage naturel">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Vision par ordinateur', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/comp.png" alt="Vision par ordinateur">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Science des données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/data.png" alt="Science des données">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Développement avancé en Python incluant FastAPI et Flask', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/python-icon.png" alt="Python">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Développement de pipelines d\'apprentissage automatique de bout en bout', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/ml-icon.png" alt="Apprentissage automatique">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Conception et optimisation de l\'architecture des réseaux neuronaux', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/deep-learning-icon.png" alt="Apprentissage profond">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Développement web complet avec React et Node.js', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/web-dev-icon.png" alt="Ingénierie web">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Analyse statistique et visualisation des données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/data-analysis-icon.png" alt="Analyse de données">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Automatisation et déploiement des pipelines d\'apprentissage automatique', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/mlops.png" alt="MLOps">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Traitement des textes et modèles linguistiques', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/nlp.png" alt="Traitement du langage naturel">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Traitement des images et systèmes de vision artificielle', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/comp.png" alt="Vision par ordinateur">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Ingénierie de systèmes évolutifs pour l\'IA', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/sys.png" alt="Conception de système">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Adobe After Effects pour le montage vidéo et les animations', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Ae.png" alt="Conception de système">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Adobe Illustrator pour le design graphique', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Ai.png" alt="Conception de système">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Programmation Java', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/java-logo.png" alt="Logo">
-                    </div>
-                  </li>
-                </ul>
+<!-- liste des compétences -->
+<ul v-staggerdelay="50" v-show="skillsType === 'skills'">
+  <li tabindex="0" v-tooltip="{text: 'Programmation Python', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/python-icon.png" alt="Python">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Ingénierie de l\'Apprentissage Automatique', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/ml-icon.png" alt="Apprentissage Automatique">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Apprentissage Profond', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/deep-learning-icon.png" alt="Apprentissage Profond">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Analyse de Données', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/data-analysis-icon.png" alt="Analyse de Données">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Traitement du Langage Naturel', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/nlp.png" alt="Traitement du Langage Naturel">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Vision par Ordinateur', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/comp.png" alt="Vision par Ordinateur">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Science des Données', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/data.png" alt="Science des Données">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Analyse Statistique et Visualisation de Données', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/data-analysis-icon.png" alt="Analyse de Données">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Automatisation et Déploiement de Pipelines ML', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/mlops.png" alt="MLOps">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Traitement de Texte et Modèles Linguistiques', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/nlp.png" alt="Traitement du Langage Naturel">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Traitement d\'Images et Systèmes d\'IA Visuelle', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/comp.png" alt="Vision par Ordinateur">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Architecture de Systèmes AI Évolutive', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/sys.png" alt="Conception de Systèmes">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Programmation Java', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/java-logo.png" alt="Java">
+    </div>
+  </li>
+</ul>
 
-                <!-- Liste des outils -->
-                <ul v-staggerdelay="50" v-show="skillsType === 'tools'">
-                  <li tabindex="0" v-tooltip="{text: 'Anaconda pour la gestion de l\'environnement', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/anaconda-icon.png" alt="Anaconda">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Jupyter Notebook pour l\'ingénierie interactive', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/jupyter-icon.png" alt="Jupyter Notebook">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Git pour le contrôle de version et la collaboration', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/git-icon.png" alt="Git">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'TensorFlow pour la construction de modèles d\'IA', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/tensorflow-icon.png" alt="TensorFlow">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'PyTorch pour les réseaux neuronaux avancés', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/pytorch-icon.png" alt="PyTorch">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Docker pour les conteneurs', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Docker.png" alt="Docker">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'VS Code pour le développement', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/VS Code.png" alt="VS Code">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'MySQL pour la gestion de bases de données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/MySQL.png" alt="MySQL">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'MongoDB pour les bases de données NoSQL', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/mongo.png" alt="MongoDB">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Gestion de l\'environnement et distribution des packages', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/anaconda-icon.png" alt="Anaconda">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Développement et expérimentation interactifs', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/jupyter-icon.png" alt="Jupyter Notebook">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Développement de modèles d\'apprentissage automatique prêts pour la production', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/tensorflow-icon.png" alt="TensorFlow">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Apprentissage profond orienté recherche', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/pytorch-icon.png" alt="PyTorch">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Orchestration des conteneurs et déploiement', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Docker.png" alt="Docker">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Orchestration des conteneurs à grande échelle', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Kubernetes.png" alt="Kubernetes">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Gestion du cycle de vie de l\'apprentissage automatique', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/mlflow.png" alt="MLflow">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Suivi des expériences d\'apprentissage automatique', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Weights.svg" alt="Weights & Biases">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Modèles NLP de pointe', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/hug.png" alt="Hugging Face">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Cadre de calcul distribué', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/ray.png" alt="Ray">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Contrôle de version pour les données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/dvc.png" alt="DVC">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Adobe Illustrator pour le design graphique', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Ai.png" alt="Adobe Illustrator">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Adobe After Effects pour le montage vidéo et les animations', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Ae.png" alt="Adobe After Effects">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Scikit-learn pour l\'apprentissage automatique', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Scikit-learn.png" alt="Scikit-learn">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'NumPy pour les calculs numériques', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/NumPy.png" alt="NumPy">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Pandas pour le traitement des données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/pandas.png" alt="Pandas">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Matplotlib pour la visualisation des données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Matplotlib.png" alt="Matplotlib">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Seaborn pour la visualisation statistique des données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/seaborn.png" alt="Seaborn">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Oracle pour la gestion de bases de données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/oracle.png" alt="Oracle">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'SQL Developer pour la gestion de bases de données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/SQL.png" alt="SQL Developer">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'SQL*Plus pour la gestion de bases de données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/sqlplus.png" alt="SQL*Plus">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'PhpMyAdmin pour la gestion de bases de données', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/phpmyadmin.png" alt="PhpMyAdmin">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'GitHub pour le contrôle de version et la collaboration', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/github.jpg" alt="GitHub">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Jira pour la gestion de projets', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Jira.png" alt="Jira">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'PyCharm pour le développement Python', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/pycharm.png" alt="PyCharm">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'StarUML pour la modélisation', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/staruml.png" alt="StarUML">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Linux (Ubuntu) pour le système d\'exploitation', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/linux.png" alt="Linux">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Windows (10, 11) pour le système d\'exploitation', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Windows.png" alt="Windows">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'HTML5 pour le développement web', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/HTML5.png" alt="HTML5">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'CSS3 pour le développement web', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/CSS3.png" alt="CSS3">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'JavaScript pour le développement web', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/JavaScript.png" alt="JavaScript">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'React.js pour le développement web', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/React.png" alt="React.js">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Node.js pour le développement web', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Node.png" alt="Node.js">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'PHP pour le développement web', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/php.png" alt="PHP">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Laravel pour le développement web', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Laravel.png" alt="Laravel">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Scrum pour la méthodologie de développement agile', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/scrum.png" alt="Scrum">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'UML pour la modélisation', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/UML.png" alt="UML">
-                    </div>
-                  </li>
-                  <li tabindex="0" v-tooltip="{text: 'Merise pour la modélisation', dir: 'top'}">
-                    <div class="skill-icon">
-                      <img src="assets/images/Merise.png" alt="Merise">
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin de la section des compétences -->
+<!-- liste des outils -->
+<ul v-staggerdelay="50" v-show="skillsType === 'tools'">
+  <li tabindex="0" v-tooltip="{text: 'Jupyter Notebook pour l\'Ingénierie Interactive', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/jupyter-icon.png" alt="Jupyter Notebook">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Git pour le Contrôle de Version et la Collaboration', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/git-icon.png" alt="Git">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'TensorFlow pour la Construction de Modèles IA', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/tensorflow-icon.png" alt="TensorFlow">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'PyTorch pour les Réseaux de Neurones Avancés', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/pytorch-icon.png" alt="PyTorch">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'VS Code pour le Développement', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/VS Code.png" alt="VS Code">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Scikit-learn pour l\'Apprentissage Automatique', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Scikit-learn.png" alt="Scikit-learn">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'NumPy pour le Calcul Numérique', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/NumPy.png" alt="NumPy">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Pandas pour la Manipulation de Données', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/pandas.png" alt="Pandas">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Matplotlib pour la Visualisation de Données', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Matplotlib.png" alt="Matplotlib">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Seaborn pour la Visualisation Statistique des Données', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/seaborn.png" alt="Seaborn">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'SQL Developer pour la Gestion de Base de Données', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/SQL.png" alt="SQL Developer">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'GitHub pour le Contrôle de Version et la Collaboration', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/github.jpg" alt="GitHub">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Jira pour la Gestion de Projet', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Jira.png" alt="Jira">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'StarUML pour la Modélisation', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/staruml.png" alt="StarUML">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Linux (Ubuntu) pour le Système d\'Exploitation', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/linux.png" alt="Linux">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Windows (10, 11) pour le Système d\'Exploitation', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Windows.png" alt="Windows">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Développement Web', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/HTML5.png" alt="HTML5">
+    </div>
+  </li>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Laravel pour le Développement Web', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Laravel.png" alt="Laravel">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Scrum pour la Méthodologie Agile', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/scrum.png" alt="Scrum">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'UML pour la Modélisation', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/UML.png" alt="UML">
+    </div>
+  </li>
+  <li tabindex="0" v-tooltip="{text: 'Merise pour la Modélisation', dir: 'top'}">
+    <div class="skill-icon">
+      <img src="assets/images/Merise.png" alt="Merise">
+    </div>
+  </li>
+</ul>
+
 
         <!-- Début de la section de l'expérience -->
         <div id="experience" class="experience-section section" tabindex="-1">
